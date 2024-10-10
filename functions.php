@@ -1,7 +1,7 @@
 <?php
 ini_set('error_log', WP_CONTENT_DIR . '/' . date('Y_m_d') . '_errorlogs.txt');
 
-/* CONSTANTS */
+/* CONSTANTSs */
 require_once get_template_directory() . '/inc/constants.php';
 
 
