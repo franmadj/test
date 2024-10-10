@@ -1,0 +1,1209 @@
+.home-promo
+    padding: 2.4rem 1.6rem
+    spaced(4.8rem)
+
+    &__photo
+        margin-left: -1.6rem
+        position: relative
+        spaced(5.6rem)
+        width: calc(100% + 3.2rem)
+
+    &__image
+        display: block
+        position: relative
+        width: 93%
+        z-index: 1
+
+    &__frame
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-27.5%)
+        width: 57.5%
+        z-index: 0
+
+    &__intro
+        color: #5d5d5d
+        display: block
+        font: 300 1.5rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        spaced(3.3rem)
+        text-transform: uppercase
+
+    &__title
+        color: $black
+        font: 400 2.4rem/1.3em $fontOswald
+        letter-spacing: 1.5px
+        spaced(1rem)
+        text-transform: uppercase
+
+    &__body
+        color: $gray
+        font: 400 1.5rem/1.6em $baseFont
+        spaced(3.2rem)
+
+    &__cta
+        buttonReset() // Intentional order
+        background-color: $primary
+        color: $white
+        display: inline-block
+        font: 400 1.3rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        padding: 0.9rem 1.8rem 1.1rem
+        text-transform: uppercase
+
+        &:focus,
+        &:hover
+            background: mix($primary, $black, 90%)
+            color: $white
+            text-decoration: none
+
+        &:after
+            display: inline-block
+            font-size: 2.4rem
+            icon($iconArrow)
+            margin-left: 1.4rem
+            position: relative
+            top: 0.1rem
+            transform: rotate(-90deg)
+
+.home-slider
+    centeredBlock(160rem)
+    background: $lightSecondary
+    color: $white
+    height: 57.7rem
+    position: relative
+
+    &__slides
+        cover()
+
+    &__slide
+        background-position: center center
+        background-repeat: no-repeat
+        cover()
+        opacity: 1
+        transition: opacity 0.6s
+        z-index: 1
+        background-size: 400%;
+
+        &.-disabled
+            opacity: 0
+            z-index: 0
+
+    &__buttons
+        position: absolute
+        right: -0.8rem
+        top: 50%
+        transform: translateY(-50%)
+        z-index: 3
+
+    &__button
+        buttonReset() // Intentional order
+        border-right: 1px solid $lightGray
+        display: block
+        height: 4rem
+        overflow: hidden
+        position: relative
+        spaced(0.8rem)
+        width: 0.8rem
+
+        &.-active
+            border-right-color: $accent2
+
+    &__thumbnail
+        background-color: $black
+        background-position: 50%
+        background-size: cover
+        display: none
+
+    &__inner
+        left: 50%
+        max-width: 30.2rem
+        position: absolute
+        text-align: center
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: calc(100% - 4.2rem)
+        z-index: 2
+
+    &__intro
+        background: rgba(0, 0, 0, 0.9)
+        padding: 2rem 2rem
+        position: relative
+        spaced(1.75rem)
+
+    &__intro-border
+        bottom: -0.1rem
+        left: 0
+        position: absolute
+        width: 100%
+        height: 6px
+
+        path
+            fill: $accent2
+
+    &__title,
+    &__reg
+        color: $white
+        font-family: $fontOswald
+
+    &__title
+        font-size: 2.5rem
+        letter-spacing: 1.95px
+        line-height: 1.2em
+        max-width: none
+        position: relative
+        text-transform: uppercase
+
+        &:before
+            $gradientGray = rgba(255, 255, 255, 0.075)
+
+            background: linear-gradient(to right, $gradientGray 35%, transparent 35%, transparent 65%, $gradientGray 65%)
+            bottom: 1.5rem
+            content: ''
+            display: block
+            height: 0.1rem
+            position: absolute
+            width: 100%
+
+        &:after
+            display: block
+            font-size: 2.4rem
+            icon($iconTexas)
+            margin-top: 1.6rem
+            vertical-align: middle
+
+    &__reg
+        font-size: 1.1rem
+        letter-spacing: 1.5px
+        line-height: 1.5em
+        vertical-align: top
+
+    &__cta
+        background: rgba(0, 0, 0, 0.9)
+        border-radius: 5rem
+        border: none
+        color: $white
+        cursor: pointer
+        display: inline-block
+        font: 1.1rem/ 1.5em $fontOswald
+        letter-spacing: 1.5px
+        padding: 1.2rem 1.9rem 1.2rem 5.2rem
+        position: relative
+        text-transform: uppercase
+
+        &--no-icon
+            padding-left: 2.1rem !important
+
+        &:focus,
+        &:hover
+            color: mix($white, $black, 90%)
+            text-decoration: none
+
+    &__text
+        display: none
+
+    &__icon
+        left: 1rem
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+
+.menu-preview
+    spaced(1rem)
+    z-index: 1
+
+    &__intro
+      position: relative
+
+    &__content
+        background-color: $black
+        background-image: url('/assets/img/footer-bg.jpg')
+        background-position: 50%
+        background-size: cover
+        color: $white
+        padding: 4.8rem 3.2rem
+        spaced(1rem)
+        text-align: center
+        &:before
+            background: url(/assets/img/promo-decorator.png)
+            background-size: contain
+            background-repeat: repeat-x
+            bottom: 0
+            content: ''
+            height: 6px
+            left: 0
+            position: absolute
+            width: 100%
+
+    &__title
+        color: $white
+        font: 400 2.5rem/1.6em $fontOswald
+        letter-spacing: 2.5px
+        line-height: 1.2
+        spaced(2.2rem)
+        text-transform: uppercase
+
+    &__body
+        display: block
+        font: 400 1.5rem/1.3 $baseFont
+        margin: 0 auto
+        max-width: 58rem
+
+    &__cta
+        background-color: $primary
+        background-image: url($imgPath + 'texas-decorator.png')
+        background-position: top center
+        background-repeat: no-repeat
+        color: $white
+        display: block
+        font: 400 1.5rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        padding: 2.4rem 0 2.5rem
+        text-align: center
+        text-transform: uppercase
+
+        &:focus,
+        &:hover
+            background: mix($primary, $black, 90%)
+            color: $white
+            text-decoration: none
+
+    &__cta-text
+        position: relative
+
+        &:after
+            display: inline-block
+            font-size: 2.4rem
+            icon($iconArrow)
+            margin-left: 1.3rem
+            position: relative
+            top: 0.1rem
+            transform: rotate(-90deg)
+
+.menu-thumbnail
+    position: relative
+    spaced(1rem)
+    height: 23.5rem
+
+    &__inner
+        cover()
+        transition: all 0.2s ease
+
+    &__background
+        background-position: 50%
+        background-size: cover
+        cover()
+        transform: scale(1)
+        transition: transform 0.5s ease-in-out
+
+    &__label
+        background: rgba(0, 0, 0, 0.6)
+        color: $white
+        left: 50%
+        letter-spacing: 1.5px
+        min-width: 20rem
+        padding: 2rem 2.4rem
+        position: absolute
+        text-align: center
+        top: 50%
+        transform: translate(-50%, -50%)
+        text-transform: uppercase
+
+        &:focus,
+        &:hover
+            color: $white
+            text-decoration: none
+
+    &__note,
+    &__title
+        color: $white
+        font: 400 1.8rem/1.8em $fontOswald
+        spaced(0)
+        white-space: nowrap
+
+    &__note
+        display: none
+        font-size: 1.3rem
+        line-height: 1.5em
+
+    &__border
+        bottom: -1px
+        left: 0
+        position: absolute
+        width: 100%
+
+        &.-red path
+            fill: $primary
+
+        &.-orange path
+            fill: $secondary
+
+.home-location
+    background-attachment: cover
+    background-position: 50%
+    background-size: cover
+    color: $white
+    height: 56rem
+    position: relative
+    spaced(1.6rem)
+
+    &__inner
+        background: rgba(0, 0, 0, 0.8)
+        left: 50%
+        max-width: 42.4rem
+        padding: 2.8rem 1.7rem 0
+        position: absolute
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: calc(100% - 5rem)
+
+    &__title
+        color: $white
+        font: 400 2.5rem/1.2em $fontOswald
+        letter-spacing: 1.95px
+        margin: 0 auto 2.2rem
+        max-width: 22.6rem
+        text-align: center
+        text-transform: uppercase
+        width: 100%
+
+    &__intro
+        color: $lightGray
+        display: none
+        font: 400 1.8rem/1.3em $baseFont
+        letter-spacing: 0.3px
+        margin: 0 auto
+        max-width: 30.8rem
+        spaced(3.4rem)
+        text-align: center
+
+    &__link
+        color: #8c908e
+        display: block
+        font: 400 1.3rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        padding: 1.3rem 0 1.5rem
+        text-align: center
+        text-transform: uppercase
+
+        &:focus,
+        &:hover
+            color: $white
+            text-decoration: none
+
+@media screen and (min-width: 768px)
+	.home-location
+		background-size: auto 105%
+		height: 48.7rem
+
+.home-group-dining
+    background-position: center center
+    background-size: cover
+    height: 64rem
+    position: relative
+    spaced(5.3rem)
+
+    &__inner
+        background: rgba(0, 0, 0, 0.85)
+        bottom: 0
+        color: $white
+        left: 0
+        padding: 4.5rem 3.5rem 4.9rem
+        position: absolute
+        width: 100%
+
+    &__title,
+    &__lead
+        spaced(1.1rem)
+
+    &__title
+        color: $white
+        font: 2.5rem/1.3 $fontOswald
+        letter-spacing: 1.95px
+        text-transform: uppercase
+
+    &__lead
+        font: 400 1.6rem/1.4 $baseFont
+
+    &__body
+        color: rgba(255, 255, 255, 0.8)
+        font: 400 1.5rem/1.35 $baseFont
+        letter-spacing: 0.3px
+        spaced(2.9rem)
+
+    &__cta
+        background: $primary
+        color: $white
+        font: 1.3rem/1.5 $fontOswald
+        letter-spacing: 1.5px
+        padding: 0.9rem 1.8rem 1.1rem
+        text-transform: uppercase
+
+        &:focus,
+        &:hover
+            background: mix($primary, $black, 90%)
+            color: $white
+            text-decoration: none
+
+        &:after
+            display: inline-block
+            font-size: 2.4rem
+            icon($iconArrow)
+            margin-left: 1.3rem
+            position: relative
+            top: 0.1rem
+            transform: rotate(-90deg)
+
+.home-more
+    &__title,
+    &__body
+        color: $black
+        margin: 0 auto 1rem
+        text-align: center
+
+    &__title
+        font: 2.5rem/1.3em $fontOswald
+        letter-spacing: 1.5px
+        max-width: 17.9rem
+        text-transform: uppercase
+
+    &__body
+        display: block
+        font: 400 1.5rem/1.6 $baseFont
+        max-width: 24.2rem
+        spaced(5.6rem)
+
+.home-eclub
+    background: url('/assets/img/eclub-promo.jpg')
+    background-size: cover
+    color: $white
+    padding: 3.8rem 1.5rem 4.8rem
+    spaced(3.9rem)
+    text-align: center
+
+    &__title
+        color: $white
+        font: 2.5rem/1.9em $fontOswald
+        letter-spacing: 2px
+        spaced(0.2rem)
+        text-transform: uppercase
+
+    &__intro
+        font: 400 1.5rem/1.4 $baseFont
+        margin: 0 auto 3.9rem
+        max-width: 80%
+
+    &__features
+        display: flex
+        list-style: none
+        spaced(3.1rem)
+
+    &__feature
+        flex-basis: 33%
+        font: 400 1.3rem/1.1 $fontOswald
+        letter-spacing: 1.5px
+        padding: 0 0.5rem
+        text-transform: uppercase
+
+        &.-discount,
+        &.-promotion,
+        &.-offers
+            &:before
+                display: block
+                font-size: 3.2rem
+                line-height: 1em
+                margin: 0 auto 1.6rem
+
+        &.-discount:before
+            icon($iconPercent)
+
+        &.-promotion:before
+            icon($iconCalendar)
+
+        &.-offers:before
+            icon($iconMegaphone)
+
+    &__cta
+        background: $primary
+        color: $white
+        display: inline-block
+        font: 1.3rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        padding: 0.9rem 1.8rem 1.1rem
+        text-transform: uppercase
+
+        &:focus,
+        &:hover
+            background: mix($primary, $black, 90%)
+            color: $white
+            text-decoration: none
+
+        &:after
+            display: inline-block
+            font-size: 2.4rem
+            icon($iconArrow)
+            margin-left: 1.3rem
+            position: relative
+            top: 0.1rem
+            transform: rotate(-90deg)
+
+.home-gift-cards
+    spaced(6.1rem)
+    text-align: center
+
+    &__title
+        font: 2rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        spaced(0.1rem)
+        text-transform: uppercase
+
+    &__intro
+        color: #525453
+        font: 400 1.6rem/1.5em $baseFont
+        letter-spacing: 0.3px
+        spaced(0.8rem)
+
+    &__img
+        display: block
+        margin: 0 auto 2.1rem
+
+    &__cta
+        background: $primary
+        color: $white
+        display: inline-block
+        font: 1.3rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        padding: 0.9rem 1.8rem 1.1rem
+        text-transform: uppercase
+
+        &:focus,
+        &:hover
+            background: mix($primary, $black, 90%)
+            color: $white
+            text-decoration: none
+
+        &:after
+            display: inline-block
+            font-size: 2.4rem
+            icon($iconArrow)
+            margin-left: 1.3rem
+            position: relative
+            top: 0.1rem
+            transform: rotate(-90deg)
+
+.home-social
+    color: $white
+    height: 22.5rem
+    margin: 0 auto 4.4rem
+    padding: 3.3rem
+    position: relative
+    width: 24.2rem
+
+    &__img
+        left: 0
+        position: absolute
+        top: 0
+        width: 100%
+        z-index: -1
+
+    &__title
+        color: $white
+        font: 2rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        text-align: left
+        text-transform: uppercase
+
+    &__links
+        bottom: 3.1rem
+        left: 4.2rem
+        position: absolute
+
+    &__link
+        color: $white
+        margin-right: 1.3rem
+
+        &:hover
+            color: mix($white, $black, 90%)
+            text-decoration: none
+
+        &.-facebook,
+        &.-twitter,
+        &.-instagram,
+        &.-pinterest
+            &:before
+                font-size: 3rem
+
+        &.-facebook:before
+            icon($iconFacebook)
+
+        &.-twitter:before
+            icon($iconTwitter)
+
+        &.-instagram:before
+            icon($iconInstagram)
+
+        &.-pinterest:before
+            icon($iconPinterest)
+
+.datepicker
+    text-align: center
+    width: 100%
+    color: #999999
+
+#ui-datepicker-div
+    &.ui-widget.ui-widget-content
+        border: none
+        background: #000
+        border-radius: 0
+        font-family: 'Futura PT','futura-pt', Helvetica,sans-serif;
+        font-weight: 400
+        color: $white
+
+    .ui-datepicker
+        &-header
+            background: transparent
+            border: none
+
+        &-title
+            color: $white
+
+        &-prev, &-next
+            color: $accent2
+
+        &-calendar th
+            font-weight: 400
+
+    .ui-state
+        &-default
+            border: none
+            background: rgba(51, 51, 51, 0.55)
+            color: #8c908e
+
+        &-hover, &-highlight
+            color: $white
+
+        &-active
+            border: none
+            background: $primary
+            color: white
+            font-weight: 700
+
+
+/*------------------------------------*\
+    # Tablet
+\*------------------------------------*/
+
+@media $tablet
+    .home-promo
+        clearfix()
+        margin-bottom: 0
+        padding: 6rem 1.6rem
+
+        &__photo,
+        &__content
+            float: right
+            width: calc(50% - 2.4rem)
+
+        &__photo
+            float: left
+
+    .home-slider
+        &__inner
+            top: 50%
+
+        &__slide
+            background-attachment: fixed
+            background-size: cover
+
+    .menu-preview
+        clearfix()
+
+        &__cta
+            clear: both
+
+    .menu-thumbnail
+        float: left
+        width: calc(50% - 0.5rem)
+
+        &:nth-of-type(2n+1)
+            margin-left: 1rem
+
+    .home-more
+        clearfix()
+
+        &:before
+            background-image: url(/assets/img/embellishment.png)
+            background-position: 50%
+            background-size: cover
+            bottom: 53rem
+            content: ""
+            height: 48.7rem
+            overflow: hidden
+            position: absolute
+            right: 0
+            width: 51.4rem
+            z-index: -1
+            -webkit-transform: rotate(180deg) scaleX(-1)
+            transform: rotate(180deg) scaleX(-1)
+
+    .home-gift-cards
+        float: left
+        width: 50%
+
+    .home-social
+        float: right
+        top: 2rem
+        transform: translateX(-30%)
+
+
+/*------------------------------------*\
+    # Desktop Small
+\*------------------------------------*/
+
+@media $desktop1
+    .home-promo
+        clearfix()
+        margin: 0 auto
+        max-width: 130rem
+        padding: 4.8rem 4.3rem 13rem
+
+        &__photo
+            float: left
+            margin-right: 7.5rem
+            spaced(0)
+            width: 54%
+
+        &__content
+            float: right
+            padding-top: 4rem
+            width: calc(46% - 7.5rem)
+
+        &__intro
+            font-size: 1.6rem
+            line-height: 1.5em
+            spaced(4rem)
+
+        &__title
+            font-size: 3.2rem
+            letter-spacing: 2.5px
+            line-height: 1.25em
+            spaced(1.6rem)
+
+        &__body
+            font-size: 1.8rem
+            letter-spacing: 0.3px
+            line-height: 1.3
+            spaced(4.1rem)
+
+        &__cta
+            font-size: 1.5rem
+            line-height: 1.5em
+            padding: 1.3rem 2.4rem 1.5rem
+
+    .home-slider
+        height: 84.8rem
+
+        &__buttons
+            right: -0.9rem
+
+        &__button
+            background-color: transparent
+            border-right-width: 2px
+            height: 8rem
+            overflow: hidden
+            width: 11.6rem
+
+            &:hover
+                & ^[0]__thumbnail
+                    transform: translateX(0)
+
+        &__thumbnail
+            background-color: $black
+            cover()
+            display: block
+            transform: translateX(100%)
+            transform-origin: 100% 50%
+            transition: transform 0.3s
+
+        &__inner
+            max-width: 58.8rem
+
+        &__intro
+            padding: 3.5rem 6.4rem
+            spaced(0.9rem)
+
+        &__intro-border
+            bottom -0.2rem
+
+        &__title
+            font-size: 3.2rem
+            letter-spacing: 4px
+            line-height: 1.5em
+            max-width: none
+            text-align: center
+
+            &:before
+                $gradientGray = rgba(255, 255, 255, 0.075)
+
+                background:linear-gradient(to right, $gradientGray 40%, transparent 40%, transparent 60%, $gradientGray 60%)
+                bottom: 2.5rem
+
+            &:after
+                font-size: 3.5rem
+                margin-top: 1.7rem
+
+        &__cta
+            font-size: 1.3rem
+            letter-spacing: 1.5px
+            line-height: 1.5em
+            padding: 1.9rem 2.1rem 2rem 6.4rem
+
+        &__icon
+            left: 1.5rem
+            width: 3.6rem
+
+        &__text
+            display: inline
+
+    .menu-preview
+        max-width:117rem
+        margin: 0 auto
+        position: relative;
+        margin: 0 auto 4.5rem
+
+        &__intro
+            margin-bottom: -2rem
+
+        &__content
+          position: relative
+          max-width: 70%
+          padding: 7.2rem 8rem
+          margin-top: -3.2rem
+          margin-bottom: 0
+          z-index: 1
+          clearfix()
+
+        &__deco
+            background-image: url(/assets/img/embellishment.png)
+            background-repeat: no-repeat
+            background-size: cover
+            height: 40rem
+            position: absolute
+            left: calc(70% - 24rem)
+            top:8rem
+            width: 48rem
+            transform: scale(1,-1)
+            z-index:0
+
+        &__title
+            font-size: 3.2rem
+            letter-spacing: 4px
+            line-height: 1.2
+            spaced(2.2rem)
+
+        &__body
+            font-size: 1.8rem
+            letter-spacing: 0.23px
+
+        &__cta
+            bottom: 0
+            clear: right
+            float: left
+            left: 65% // 65% of the container width minus padding, plus left side padding
+            padding: 0
+            position: absolute
+            width: 27.1rem
+            z-index: 3
+
+            &:before
+                content: ''
+                display: block
+                height: 0
+                padding-top: 100%
+
+        &__cta-text
+            bottom: 3.8rem
+            left: 3.8rem
+            position: absolute
+
+    .menu-thumbnail
+        width: 90%
+        float: right
+        height: auto
+        position: relative
+        margin: 0 auto 1.5rem
+        z-index:2
+
+        &:before
+            content: ''
+            display: block
+            height: 0
+            padding-top: ((1 / (1048/594)) * 100%)
+            width: 100%
+
+        &:after
+            background-image: url('/assets/img/textured-frame.png')
+            background-position: 50%
+            background-size: cover
+            content: ''
+            display: block
+            height: 32rem
+            position: absolute
+            left: calc(70% - 12rem)
+            top: -5.8rem
+            width: 32rem
+            z-index: 0
+
+        &:nth-of-type(2n+1)
+            float: left
+            margin-left: auto
+
+        &:nth-child(3)
+          &:after
+              left: -7rem
+              right: auto
+              top: -8rem
+
+        &:last-of-type
+            width: 65%
+            spaced(0)
+
+            &:before
+                padding-top: ((1 / (800/544)) * 100%)
+
+        &__inner
+               z-index: 1
+
+        &__note
+            display: block
+
+        &__title
+             font-size: 2.5rem
+             letter-spacing: 2.5px
+             line-height: 4rem
+
+        &__deco
+           background-image: url(/assets/img/embellishment.png)
+           background-repeat: no-repeat
+           background-size: cover
+           height: 40rem
+           position: absolute
+           left: -20rem
+           top:4rem
+           width: 48rem
+           z-index:0
+           transform: rotateZ(180deg);
+
+    .menu-thumbnail:nth-of-type(2n+1)
+      .menu-thumbnail__deco
+        left: calc(100% - 20rem)
+        transform: rotateZ(0deg);
+
+    .home-location
+        background-attachment: fixed
+        background-position: 50%
+        background-size: cover
+        height: 83.2rem
+
+        &__inner
+            padding: 5.4rem 2.9rem 0
+
+        &__title
+            font-size: 3.2rem
+            letter-spacing: 2.5px
+            line-height: 4rem
+            max-width: 30.8rem
+            spaced(1.7rem)
+
+        &__intro
+            display: block
+
+        &__link
+            padding: 1.6rem 0 2.4rem
+
+    .home-group-dining
+        height: 51.2rem
+        spaced(10rem)
+
+        &__inner
+            background: url('/assets/img/odd-shaped-overlay.svg') -90px
+            background-repeat: no-repeat
+            left: 0
+            padding: 10.6rem 0 0 12.1rem
+            top: 0
+            width: 76.9rem
+
+        &__title
+            font-size: 3.2rem
+            letter-spacing: 2.5px
+            line-height: 4.8rem
+            spaced(1.9rem)
+
+        &__lead,
+        &__body
+            letter-spacing: 0.3px
+
+        &__body
+            max-width: 35.3rem
+
+        &__lead
+            font-size: 1.8rem
+            line-height: 2.8rem
+            max-width: 45.2rem
+            spaced(2.6rem)
+
+        &__body
+            font-size: 1.6rem
+            line-height: 2.4rem
+            spaced(2.4rem)
+
+        &__cta
+            display: inline-block
+            font-size: 1.5rem
+            letter-spacing: 1.5px
+            padding: 1.2rem 2.7rem 1.4rem
+
+    .home-more
+        clearfix()
+        margin: 0 auto
+        width: 81.1rem
+
+        &__title
+            font-size: 3.2rem
+            letter-spacing: 2.5px
+            line-height: 4.8rem
+            max-width: none
+            spaced(1.7rem)
+
+        &__body
+            font-size: 1.8rem
+            letter-spacing: 0.3px
+            line-height: 2.8rem
+            max-width: 56rem
+            margin-bottom: 8.2rem
+
+    .home-eclub
+        margin: 0 auto 3.9rem
+        padding: 7.4rem 0 6.1rem
+        width: 81.1rem
+
+        &__title
+            color: $white
+            font-size: 3.2rem
+            letter-spacing: 2px
+            line-height: 4.8rem
+            spaced(0.5rem)
+
+        &__intro
+            font-size: 2rem
+            letter-spacing: 0.3px
+            line-height: 2.8rem
+            spaced(4.8rem)
+
+        &__features
+            spaced(5.2rem)
+
+        &__feature
+            font-size: 1.5rem
+            letter-spacing: 1.5px
+            line-height: 1.5em
+
+            &.-discount:before,
+            &.-promotion:before,
+            &.-offers:before
+                font-size: 6.2rem
+                spaced(2.1rem)
+
+        &__cta
+            font-size: 1.5rem
+            letter-spacing: 1.5px
+            padding: 1.7rem 5.2rem
+
+
+/*------------------------------------*\
+    # Desktop Medium
+\*------------------------------------*/
+
+@media $desktop2
+    .home-promo
+
+        &__photo
+            margin-right: 15.1rem
+
+        &__content
+            width: calc(46% - 15.1rem)
+
+
+
+/*------------------------------------*\
+    # Desktop Large
+\*------------------------------------*/
+
+@media $desktop3
+    .home-promo
+        position: relative
+        min-height: 55rem
+        padding: 4.8rem 4.3rem 6.3rem 4.3rem
+
+        &:before
+            background-image: url('/assets/img/embellishment.png')
+            background-position: 50%
+            background-size: cover
+            bottom: -23rem
+            content: ''
+            height: 48.7rem
+            overflow: hidden
+            position: absolute
+            right: 0
+            width: 51.4rem
+            z-index: -1
+
+    .home-more
+        margin: 0 auto
+        max-width: 116rem
+        width: auto
+
+    .home-eclub
+        float: left
+
+    .home-gift-cards
+        float: right
+        padding-right: 2.5rem
+        width: auto
+
+    .home-social
+        top: auto
+        transform: none
+
+.c-video
+    &__wrapper
+        bottom: 0
+        left: 0
+        overflow: hidden
+        position: absolute
+        right: 0
+        top: 0
+        display: none
+    &__iframe
+        height: 200%
+        left: 50%
+        pointer-events: none
+        position: absolute
+        top: -50%
+        transform: translateX(-50%)
+        width: 240rem
+
+@media $tablet
+    .c-video
+        &__wrapper
+            display: block
+
+@media $desktop1
+    .c-video__inner
+        overflow: hidden
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;

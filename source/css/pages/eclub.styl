@@ -1,0 +1,141 @@
+.eclub-landing
+    background-image: url($imgPath + 'bg-dual-pat.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+
+.u-eclub-wrapper
+    margin-bottom: 10rem
+
+.u-eclub-lead
+    font-size: 1.8rem
+    line-height: 2.4rem
+    color: $gray
+    margin-top: 5rem
+
+.u-eclub-content
+    font-size: 1.5rem
+    line-height: 2.4rem
+    color: $gray
+
+.u-eclub-addendum
+    color: $lightGray
+    font-size: 1.4rem
+    line-height: 1.8rem
+
+.u-eclub-form
+    .datepicker
+        text-align: left
+        background: #191919
+        margin: 0.1rem
+    .unstyled
+    	select
+    		margin: 0.1rem
+    		min-width: 99%
+    		height: 3.8rem
+
+.u-highlights
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-top: 5.4rem
+    margin-bottom: 5.4rem
+    &__item
+        flex: 0 0 33%
+        text-align: center
+    &__image
+        display: block
+        margin: 0 auto 2.4rem
+        min-height: 6.9rem
+    &__text
+        display: inline-block
+        line-height: 1.6
+
+@media screen and (min-width: 768px)
+    .u-eclub-form
+        margin-right: 10%
+
+.u-form-check
+    display: flex
+    margin: 3.4rem 0
+    position: relative
+    &__input
+        -webkit-appearance: none
+        border: none
+        flex: 0 0 3rem
+        outline: none
+        visibility: hidden
+        &:checked + .u-form-check__label:before
+            background: $secondary
+            border: 3px solid #302F2F
+        &:focus
+            box-shadow: none
+    &__label
+        flex: 1
+        &:before
+            background: #302F2F
+            content: ''
+            display: block
+            height: 1.6rem
+            left: 0
+            position: absolute
+            width: 1.6rem
+            margin-top: -1px
+
+.u-conditions-text
+    color: #999999 !important
+    display: block
+    font-size: 1.4rem !important
+    line-height: 1.6rem !important
+
+.u-eclub-submit
+    margin-bottom: 0
+    width: 100%
+
+.c-box
+    &__input
+        &--error
+            border: 1px solid $primary
+
+.u-errors
+    color: $error
+    margin-bottom: 1.2rem
+
+.c-box
+    &__col
+        .choices
+            flex-basis: 100%
+
+@media screen and (min-width: 991px)
+    .c-box
+        &__col
+            .choices
+                flex: 2
+
+.js-is-hidden
+    display: none
+
+.u-date-label
+    background: #191919
+    color: #A6A6A6
+    display: block
+    line-height: 3.9rem
+    margin: 0.1rem 0 0.1rem 0.1rem
+    width: 100%
+    padding: 0 1.2rem
+
+@media screen and (min-width: 768px)
+	.u-date-label
+		min-width: 10.4rem
+		width: auto
+
+.u-date-input
+	margin-left: 0
+
+
+@media $tablet
+    .u-highlights
+        margin-bottom: 0
+    .u-eclub-lead
+        margin-top: 0
+

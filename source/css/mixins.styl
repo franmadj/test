@@ -1,0 +1,173 @@
+/*------------------------------------*\
+	# Grids
+\*------------------------------------*/
+
+inlineRow($margin = 4%)
+	letter-spacing: -0.5rem
+	margin-left: -($margin)%
+	max-width: (100 + $margin)%
+
+inlineColumn($cols, $total, $margin = 4%)
+	display: inline-block
+	letter-spacing: normal
+	margin-left: $margin
+	width: ($cols / $total * 100)% - $margin
+
+centeredBlock($width = false)
+	margin-left: auto
+	margin-right: auto
+
+	if $width
+		max-width: $width
+
+
+/*------------------------------------*\
+	# Buttons
+\*------------------------------------*/
+
+buttonReset()
+	background: none
+	border: 0
+	trBase()
+
+	&:active,
+	&:focus
+		outline: none
+
+	&:hover
+		cursor: pointer
+
+
+/*------------------------------------*\
+	# Layout
+\*------------------------------------*/
+
+clearfix()
+	&:after
+		clear: both
+		content: ''
+		display: table
+
+cover(pos = absolute)
+	bottom: 0
+	left: 0
+	position: pos
+	right: 0
+	top: 0
+
+padded(left, right = left)
+	padding-left: left
+	padding-right: right
+
+spaced(value)
+	margin-bottom: value
+
+lifted(value)
+	margin-top: -1 * value
+
+absoluteCenter()
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+
+marginCenter(reset = false)
+	if reset == 'reset'
+		margin-left: 0
+		margin-right: 0
+	else
+		margin-left: auto
+		margin-right: auto
+
+
+/*------------------------------------*\
+	# Typography
+\*------------------------------------*/
+
+loadFont(name, file = name, weight = normal, style = normal)
+	@font-face
+		font-family: '%s' % name
+		font-style: style
+		font-weight: weight
+		src: url('/assets/fonts/' + file + '.woff2?52308151') format('woff2'),
+			 url('/assets/fonts/' + file + '.woff?52308151') format('woff'),
+			 url('/assets/fonts/' + file + '.ttf?52308151') format('truetype')
+
+icon(value, family = fontello)
+	content: value
+	font-family: family
+
+userSelect(value = none) {
+	-moz-user-select: value
+	-ms-user-select: value
+	-webkit-user-select: value
+}
+
+
+/*------------------------------------*\
+	# Animations
+\*------------------------------------*/
+
+trBase() {
+	-webkit-transition: color 0.8s, background-color 0.8s
+    transition: color 0.8s, background-color 0.8s
+}
+
+
+@keyframes enterLeft {
+	0% {
+		opacity: 0
+		transform: translateX(-100%)
+	}
+	100% {
+		opacity: 1
+		transform: translateX(0%)
+	}
+}
+.enter-left
+	visibility: hidden
+	&.-is-visible
+		animation: enterLeft 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+		visibility: visible
+
+@keyframes enterRight {
+	0% {
+		opacity: 0
+		transform: translateX(100%)
+	}
+	100% {
+		opacity: 1
+		transform: translateX(0%)
+	}
+}
+.enter-right
+	visibility: hidden
+	&.-is-visible
+		animation: enterRight 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+		visibility: visible
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+.fade-in-element
+	visibility: hidden
+	&.-is-visible
+		animation: fadeIn 1.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+		visibility: visible
+
+@keyframes headerAnimation
+	0%
+		opacity: 0
+		transform: translateY(-15rem)
+	50%
+		background: $white
+		opacity: 0.5
+		transform: translateY(-7.5rem)
+	100%
+		background: transparent
+		opacity: 1
+		transform: translateY(0)

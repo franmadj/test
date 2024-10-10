@@ -1,0 +1,15 @@
+<svg viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="image-hotspot__icon" preserveAspectRatio="xMinYMin meet">
+    <defs>
+        <rect id="path-1" x="4" y="4" width="19" height="19" class="image-hotspot__rect"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hotspot">
+            <g id="Rectangle-9" transform="translate(13.500000, 13.500000) rotate(45.000000) translate(-13.500000, -13.500000) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1" class="image-hotspot__fill"></use>
+                <rect stroke="#FFFFFF" stroke-width="2" x="5" y="5" width="17" height="17"></rect>
+            </g>
+            <path d="M14,13 L14,8.50123084 C14,8.22975063 13.7761424,8 13.5,8 C13.2319336,8 13,8.22440869 13,8.50123084 L13,13 L8.50123084,13 C8.22975063,13 8,13.2238576 8,13.5 C8,13.7680664 8.22440869,14 8.50123084,14 L13,14 L13,18.4987692 C13,18.7702494 13.2238576,19 13.5,19 C13.7680664,19 14,18.7755913 14,18.4987692 L14,14 L18.4987692,14 C18.7702494,14 19,13.7761424 19,13.5 C19,13.2319336 18.7755913,13 18.4987692,13 L14,13 Z" id="Combined-Shape" fill="#6E181E" class="image-hotspot__plus"></path>
+        </g>
+    </g>
+</svg>

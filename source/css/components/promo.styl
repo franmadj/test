@@ -1,0 +1,149 @@
+.s-group-dining
+	.o-grid--gutters:first-child
+		.o-col
+			margin-top: 0
+
+.s-promotions:first-child .o-col
+	margin-top: 0
+
+.c-promo
+	background-position: center center
+	background-size: cover
+	color: $white
+	min-height: 50rem
+	padding: 1.2rem
+	position: relative
+	&:before
+		background-image: url($imgPath + 'promo-shadow.svg')
+		background-position: center top -50px
+		background-repeat: no-repeat
+		background-size: cover
+		bottom: 0
+		content: ''
+		height: 32rem
+		left: 0
+		position: absolute
+		width: 100%
+
+	&__content
+		position: absolute
+		right: 1.8rem
+		bottom: 4.6rem
+		left: 1.8rem
+		margin: 0 auto
+		text-align: center
+	&__title
+		display: block
+		font: 3.2rem/1.2em $fontOswald
+		letter-spacing: 0.3rem
+		margin-bottom: 1rem
+		text-transform: uppercase
+		position: relative
+		z-index: 2
+	&__teaser
+		display: block
+		font-size: 1.8rem
+		font-weight: 400
+		line-height: 2.8rem
+		max-width: 50rem
+		margin: 0 auto
+		position: relative
+		z-index: 2
+	&__button
+		background-color: $accent2Buttons
+		color: $white
+		display: inline-block
+		font: 300 1.5rem/1.5em $fontOswald
+		letter-spacing: 0.15rem
+		margin-top: 1.8rem
+		padding: 1.2rem 2.7rem 1.4rem
+		text-transform: uppercase
+		transition: opacity 0.4s ease
+
+		&:focus,
+		&:hover
+			background-color: mix($accent2Buttons, $black, 90%)
+			color: $white
+			text-decoration: none
+
+		&:after
+			color: $white
+			content: $iconArrow
+			display: inline-block
+			font-family: $fontIcon
+			font-size: 2.4rem
+			margin-left: 1.4rem
+			transform: rotate(-90deg)
+			vertical-align: top
+	&--feature
+		&:before
+			display: none
+		.c-promo
+			&__title
+				font-size: 4rem
+				letter-spacing: 3.12px
+			&__content
+				bottom: 15%
+				left: 1.2rem
+				position: absolute
+				right: 1.2rem
+				&:before
+					absoluteCenter()
+					background-color: rgba(0,0,0,0.75)
+					background-image: url($imgPath + 'promo-decorator.png')
+					background-position: bottom center
+					background-repeat: no-repeat
+					content: ''
+					display: block
+					height: 24rem
+					left: 0
+					margin: 0 auto
+					right: 0
+					width: 24rem
+
+.o-col + .o-col
+	.c-promo
+		&:before
+			transform: scaleX(-1)
+
+@media $tablet
+	.c-promo
+		&:before
+			height: 24rem
+		&--feature
+			&:before
+				display: none
+			.c-promo
+				&__content
+					bottom: auto
+					left: 0
+					margin-left: auto
+					margin-right: auto
+					right: 0
+					text-align: center
+					top: 50%
+					transform: translateY(-50%)
+					&:before
+						height: 24rem
+				&__title
+					margin-bottom: 2.8rem
+		&--highlight
+			&:before
+				background-image: url($imgPath + 'promo-highlight.svg')
+				background-position: inherit
+				bottom: 0
+				height: 30rem
+				left: auto
+				position: absolute
+				right: 0
+				width: 67rem
+			.c-promo
+				&__content
+					left: auto
+					right: 11.4rem
+
+@media $desktop1
+	.c-promo
+		&--feature
+			min-height: 55rem
+			padding-top: 8rem

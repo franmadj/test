@@ -1,0 +1,27 @@
+.date-block
+    background-image: url($imgPath + 'date-block.svg')
+    clearfix()
+    color: $white
+    font: 300 1.2rem/1.2em $fontOswald
+    letter-spacing: 1.5px
+    line-height: 1.2em
+    padding: 0.8rem
+    width: 8rem
+
+    &__year,
+    &__month,
+    &__day
+        display: block
+
+    &__year
+        color: $accent2
+
+    &__month
+        spaced(2rem)
+        text-transform: uppercase
+
+    &__day
+        float: right
+        font-size: 4rem
+        letter-spacing: 0
+        line-height: 1em

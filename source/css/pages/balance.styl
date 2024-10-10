@@ -1,0 +1,58 @@
+.u-balance-wrapper
+    centeredBlock(72rem)
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-items: center
+    flex-direction: column
+    padding-bottom: 11rem
+
+    &__heading
+        font-size: 2.4rem
+        margin-bottom: 2.4rem
+        line-height: 1.1
+    &__price
+        color: $black
+        font-family: $fontOswald
+        font-weight: 300
+        font-size: 2.6rem
+    &__content
+        position: relative
+        text-align: center
+
+.u-balance-box
+    background-image: url('/assets/img/red-decorator.svg') !important
+    background-position: center bottom !important
+    background-repeat: no-repeat !important
+    background-size: contain !important
+    max-width: 38rem
+    padding: 3rem !important
+    text-align: center
+    margin-bottom: 3.2rem !important
+
+    &__logo
+        margin-bottom: 1.8rem
+        max-width: 80%
+    &__input
+        width: 100%
+        margin-bottom: 1.6rem !important
+    &__button
+        color: $white
+        letter-spacing: 2px
+        margin-bottom: 0
+
+@media $desktop1
+    .u-balance-wrapper
+        flex-direction: row
+
+        &__balance
+            flex: 1
+            padding: 0 6rem
+
+    .u-balance-box
+        flex: 1
+        padding: 6rem 3rem !important;
+
+.u-balance-instructions
+	&--disabled
+		display: none

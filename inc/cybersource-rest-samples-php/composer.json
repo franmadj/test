@@ -1,0 +1,26 @@
+{
+    "name": "cybersource/samplecodes", 
+    "version": "0.0.1",
+    "description": "Sample code for REST api",
+    "keywords": [
+        "Authentication",
+        "cybersource",
+        "payments",
+        "ecommerce",
+        "samplecodes",
+        "restapisamples"
+    ],
+    "homepage": "https://github.com/CyberSourceApi/",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Visa developer",
+            "homepage": "https://github.com/CyberSourceApi/cybersource-rest-samples-php"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.0",
+        "cybersource/rest-client-php": "0.0.47",
+        "firebase/php-jwt": "^6.0.0"
+    }
+}

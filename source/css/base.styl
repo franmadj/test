@@ -1,0 +1,358 @@
+/*------------------------------------*\
+	# Breakpoints
+\*------------------------------------*/
+
+html
+	font-family: '1'
+
+	@media $mobile2
+		font-family: '2'
+
+	@media $tablet
+		font-family: '3'
+
+	@media $desktop1
+		font-family: '4'
+
+	@media $desktop2
+		font-family: '5'
+
+	@media $desktop3
+		font-family: '6'
+
+	-moz-osx-font-smoothing: grayscale
+
+
+
+
+
+/*------------------------------------*\
+	# Fonts
+\*------------------------------------*/
+
+loadFont($fontIcon)
+
+
+
+
+
+/*------------------------------------*\
+	# Icons
+\*------------------------------------*/
+
+.menu-icon
+	display: inline-block
+	height: 11px
+	margin-right: 9px
+	position: relative
+	width: 19px
+
+	&.-active
+		& ^[0]__top
+			left: 1px
+			top: 5px
+			transform: rotate(225deg)
+
+		& ^[0]__middle
+			left: -8px
+			opacity: 0
+			transition-delay: 0s
+
+		& ^[0]__bottom
+			bottom: 5px
+			left: 1px
+			transform: rotate(-225deg)
+			width: 16px
+
+	&__top,
+	&__middle,
+	&__bottom
+		background: $black
+		display: block
+		height: 1px
+		position: absolute
+		transition: all 0.3s ease-in-out
+
+	&__top
+		left: 0
+		top: 0
+		width: 16px
+
+	&__middle
+		left: 0
+		opacity: 100
+		top: 5px
+		transition-delay: 0.2s
+		transition-duration: 0.1s
+		width: 11px
+
+	&__bottom
+		bottom: 0
+		left: 0
+		width: 19px
+
+
+
+
+
+/*------------------------------------*\
+	# Layout
+\*------------------------------------*/
+
+body,
+main
+	background: $bodyBackground
+
+body
+	color: $baseColor
+	font-family: $baseFont
+	font-size: $baseFontSize
+	font-weight: $baseFontWeight
+	line-height: $baseLineHeight
+	overflow-x: hidden
+	position: relative
+
+main
+	border-left: 16px solid transparent
+	border-right: 16px solid transparent
+	position: relative
+	z-index: 1
+
+.container
+	position: relative
+
+.main
+	&--interior
+		box-shadow: none
+		padding-bottom: 1rem
+		padding-top: 13rem
+
+@media $tablet
+	.main
+		&--interior
+			padding-top: 13rem
+
+@media $desktop1
+	body
+		padding-bottom: 69rem
+
+	.no-footer
+		padding-bottom: 0 !important
+
+		main
+			box-shadow: none
+
+	.main
+		&--interior
+			padding-bottom: 10rem
+			padding-top: 18rem
+			min-height: 100vh
+
+@media $desktop2
+	body
+		padding-bottom: 50rem
+
+.o-container
+	centeredBlock($maxWidth)
+	padding-left: $bumperPadding
+	padding-right: $bumperPadding
+
+.o-wrapper
+	margin-left: auto
+	margin-right: auto
+	max-width: 180rem
+
+.o-content
+	centeredBlock(110rem)
+
+
+
+
+
+/*------------------------------------*\
+	# Links
+\*------------------------------------*/
+
+a
+	color: $linkColor
+	text-decoration: $linkDecoration;
+	&:hover
+		color: $linkColorHover
+		text-decoration: $linkDecorationHover
+	&:active
+		color: $linkColorActive
+
+
+
+
+
+/*------------------------------------*\
+	# Headings
+\*------------------------------------*/
+
+h1,h2,h3,h4,h5,h6
+	color: $headingColor
+	font-family: $headingFont
+	font-weight: $headingFontWeight
+	line-height: $headingLineHeight
+
+
+
+
+
+/*------------------------------------*\
+	# Buttons
+\*------------------------------------*/
+
+.button
+	background: $buttonBackground
+	border-radius: $buttonRounded
+	border: none
+	color: $buttonColor
+	display: inline-block
+	font-family: $buttonFont
+	font-size: $buttonFontSize
+	font-weight: $buttonFontWeight
+	letter-spacing: 1.5px
+	margin-bottom: $buttonMarginBottom
+	padding: $buttonPaddingHorizontal $buttonPaddingVertical
+	text-transform: uppercase
+	&:hover
+		background: $buttonBackgroundHover
+		color: $white
+		cursor: pointer
+		text-decoration: none
+	&:active
+		background: $buttonBackgroundActive
+		color: $white
+	&--alternate
+		background: transparent
+		border: 1px solid $lighterGray
+		color: $darkGray
+	&--accent-two
+		background-color: $accent2Buttons
+	&--gray
+		background: $lightGray
+		color: $white
+	&--small
+		font-size: 1.3rem
+		line-height: 1
+		padding: 1rem 2rem
+
+
+
+
+/*------------------------------------*\
+	# Grids
+\*------------------------------------*/
+
+.o-grid
+	&--gutters
+		margin-left: - ($gridSpacing)
+		&:last-child
+			padding-bottom: $gridSpacing
+		.o-col
+			margin: $gridSpacing 0 0 $gridSpacing
+.o-col
+	flex: 1
+	&--tablet
+		display: block
+
+@media screen and (min-width: 768px)
+	.o-grid
+		display: flex;
+		flex-wrap: wrap
+	.o-col
+		&--tablet
+			flex: 1
+
+@media screen and (min-width: 999px)
+	.o-grid
+		&--desktop
+			display: flex
+			flex-wrap: wrap
+	.o-col
+		&--desktop
+			flex: 1
+
+
+
+/*------------------------------------*\
+	# Helpers
+\*------------------------------------*/
+
+.js-hide
+	display: none !important
+
+.no-scroll
+	overflow: hidden !important
+
+
+
+/*------------------------------------*\
+	# Inputs
+\*------------------------------------*/
+
+input,
+textarea
+	border: 1px solid #CCC
+	color: $darkGray
+	font-family: $baseFont
+	font-size: 1.3rem
+	font-weight: 400
+	letter-spacing: 0.05rem
+	line-height: 1.8rem
+	padding: 1rem
+	text-transform: uppercase
+
+input
+	&:focus
+		outline: none
+		box-shadow:inset 0px 0px 0px 1px #474747
+	&:-webkit-autofill
+		-webkit-text-fill-color: #FFFFFF !important
+		box-shadow: 0 0 0 50px #212121 inset !important
+select
+	&:focus
+		outline: none
+	&:-webkit-autofill
+		-webkit-text-fill-color: #FFFFFF !important
+		box-shadow: 0 0 0 50px #212121 inset !important
+textarea
+	&:focus
+		outline: none
+		box-shadow:inset 0px 0px 0px 1px #474747
+button
+	&:focus
+		outline: none
+
+
+
+/*------------------------------------*\
+	# Selection
+\*------------------------------------*/
+
+::selection
+	background-color: $lightGray
+
+.js-disable-click
+	cursor: not-allowed
+	opacity: 0.33
+
+
+
+
+
+/*------------------------------------*\
+	# Forms
+\*------------------------------------*/
+
+input
+	border-radius: 0
+
+input[type="date"],
+select
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	border-radius: 0

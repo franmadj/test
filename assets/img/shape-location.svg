@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="783px" viewBox="0 0 91 783" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>shape-location@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="-9.09494702e-13 0 90.75 286 -9.09494702e-13 783"></polygon>
+    </defs>
+    <g id="Locations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="shape-location" fill-opacity="0.8" fill="#000000" transform="translate(45.375000, 391.500000) scale(-1, 1) translate(-45.375000, -391.500000) " xlink:href="#path-1"></use>
+    </g>
+</svg>

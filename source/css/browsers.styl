@@ -1,0 +1,10 @@
+// IE 11 doesn't recognize main elements
+main
+    display: block
+
+// IE 11 doesn't do SVGs well
+@media all and (-ms-high-contrast:none)
+    .u-disable-ie
+        display: none
+    .u-force-height
+        min-height: 4rem

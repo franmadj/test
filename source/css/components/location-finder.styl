@@ -1,0 +1,120 @@
+.location-finder
+    display: flex
+    flex-wrap: wrap
+    position: relative
+
+    &__field
+        background: rgba(0, 0, 0, 0.7)
+        flex-basis: 100%
+        padding-top: 0.2rem
+        spaced(0.1rem)
+
+    &__label
+        color: $white
+        display: block
+        font: 400 1.1rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        text-align: center
+        text-transform: uppercase
+
+    &__dropdown
+        .choices
+            background: none
+            text-align: center
+
+            &,
+            &__inner
+                height: 4rem
+
+            &__list--single
+                .choices__item
+                    background: none
+
+    &__input,
+    &__select
+        background-color: transparent
+        border: 0
+        color: $lightGray
+        display: block
+        font: 500 1.3rem/1.3em $baseFont
+        height: 3.2rem
+        max-width: none
+        padding: .6rem 1rem .9rem
+        text-transform: uppercase
+        width: 100%
+
+    &__input
+        text-align: center
+
+    &__select
+        cursor: pointer
+        text-align-last: center
+
+    &__submit
+        buttonReset() // Intentional order
+        background: $primary
+        color: $white
+        font: 400 1.3rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        padding: 1.4rem
+        position: relative
+        text-align: center
+        text-transform: uppercase
+        width: 100%
+
+        &:focus,
+        &:hover
+            background: mix($primary, $black, 90%)
+
+    &__submit-border
+        bottom: -0.1rem
+        left: 0
+        position: absolute
+        width: 100%
+
+        path
+            fill: #650f1c
+
+@media $desktop1
+    .location-finder
+        &__field
+            background: none
+            flex-basis: calc(50% - 0.1rem)
+            padding: 0
+            spaced(0.2rem)
+
+            &:first-of-type
+                margin-right: 0.2rem
+
+        &__label,
+        &__dropdown,
+        &__input
+            background: rgba(0, 0, 0, 0.7)
+
+        &__input,
+        &__select
+            height: 4rem
+            padding: 1.2rem 2.4rem 1.1rem
+
+        &__input
+            text-align: left
+
+        &__select
+            letter-spacing: 0.5px
+
+        &__label
+            font-size: 1.3rem
+            padding: 0.2rem 0 0.3rem
+            spaced(0.2rem)
+
+        &__submit
+            font-size: 1.5rem
+            letter-spacing: 1.5px
+            padding: 1rem 0 1.2rem
+
+            &:after
+                display: inline-block
+                font-size: 2.4rem
+                icon($iconArrow)
+                margin-left: 0.8rem
+                transform: rotate(-90deg)

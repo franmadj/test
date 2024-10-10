@@ -1,0 +1,112 @@
+.contact-landing
+    background-image: url($imgPath + 'bg-dual-pat.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+
+    .o-container { max-width: 1400px; }
+
+.u-contact-heading
+    font-size: 3.2rem
+    margin-bottom: 3rem
+.u-contact-item__left,
+.u-contact-item__right
+    flex: 1 1 50%
+.u-contact-item
+    border-bottom: 1px solid #F2EEE6
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 3.8rem
+    padding-bottom: 3.8rem
+    &:last-child:not(.u-social-icons)
+        border-bottom: none
+        margin-bottom: 0
+        padding-bottom: 0
+.u-contact-phone
+    margin-top: 1rem
+.u-contact-phone,
+.u-contact-email
+    color: #8C908E
+    display: block
+    font-family: $fontOswald
+    font-size: 2rem
+    font-weight: 300
+    letter-spacing: 1.5px
+    line-height: 2.4rem
+.u-contact-email
+    color: $primary
+    margin-top: 1.6rem
+    text-decoration: underline
+    text-transform: uppercase
+.u-contact-social
+    display: inline-block
+.u-contact-content
+    color: #54554d
+    font-size: 1.8rem
+    font-weight: 400
+    line-height: 1.4
+    max-width: 42rem
+.u-contact-social
+    &:hover
+        text-decoration: none
+    &:before
+        content: ''
+        font-size: 2.6rem
+        margin-left: 1.1rem
+    &.-facebook
+        &:before
+            icon($iconFacebook)
+    &.-twitter
+        &:before
+            icon($iconTwitter)
+    &.-instagram
+        &:before
+            icon($iconInstagram)
+    &.-pinterest
+        &:before
+            icon($iconPinterest)
+.u-contact-submit
+    flex: 1
+    margin-bottom: 0
+    margin-top: 2.4rem
+.u-contact-form-wrapper
+    margin-top: 4rem
+.u-contact-form
+    max-width: 44.8rem
+.u-contact-form__border
+    bottom: -0.1rem
+    left: 0
+    position: absolute
+    width: 100%
+    height: 6px
+
+    path
+        fill: $primary
+.u-social-icons
+	margin: 3.6rem 0
+
+@media screen and (min-width: 991px)
+    .u-contact-form-wrapper
+        padding-left: 12rem
+
+@media screen and (min-width: 768px)
+    .u-contact-form-wrapper
+        margin-top: 0
+        margin-left: 5%
+
+@media $desktop1
+    .u-contact-content
+        margin-bottom: 6rem
+    .u-contact-phone
+        margin-top: 0
+    .u-contact-item__right
+        text-align: right
+
+.u-contact-form-wrapper
+    .unstyled
+        select
+            min-width: 0
+            max-width: 99.3%
+
+.c-box__input.datepicker.hasDatepicker
+    text-align: left

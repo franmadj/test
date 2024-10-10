@@ -1,0 +1,69 @@
+.faq-landing
+
+    background: url($imgPath + 'bg-dual-pat.png') center 150px no-repeat
+    background-size: contain
+    margin-top: -26px
+
+    a
+        color: $primary
+
+    &-content
+        margin: 0 auto
+
+        h3
+            font-size: 20px
+            color: $lightGray
+            line-height: 30px
+            font-weight: 300
+            letter-spacing: 1px
+            margin-bottom: 11px
+            margin-top: 20px
+            font-family: $fontOswald
+            text-transform: uppercase
+            text-align: center
+
+
+        h1
+            text-align: center
+            font-size: 3.2rem
+            line-height: 1.1
+            letter-spacing: 4px
+
+.faqs
+    max-width: 1110px
+    margin: 83px auto 80px auto
+    column-count: 3
+    -webkit-column-count: 3
+    -moz-column-count: 3
+    column-width: 350px
+    column-gap: 27px
+    break-inside: avoid-column
+    -webkit-column-break-inside: avoid
+
+    &-entry
+        display: block
+        margin-bottom: 15px
+        -webkit-column-break-inside: avoid
+        page-break-inside: avoid
+        break-inside: avoid-column
+        display:table
+
+    h4
+        font-size: 13px
+        letter-spacing: 1px
+        line-height: 20px
+        margin-bottom: 15px
+        color: $darkGray
+        text-transform: uppercase
+        font-family: $fontOswald
+
+    .answer, .answer p
+        color: $lightGray
+        font-size: 16px
+        line-height: 30px
+        font-weight: 400
+
+@media screen and (max-width: 769px)
+    .faq-landing
+        background-size: 100%
+        margin-top: 20px

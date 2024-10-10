@@ -1,0 +1,353 @@
+<?php
+ob_start();
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+    xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="format-detection" content="telephone=no">
+                <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+                    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+                        <title>You've been sent a Gift Card! — Texas de Brazil</title>
+                        <style type="text/css">
+                            /* Some resets and issue fixes */
+
+                            #outlook a {
+                                padding: 0;
+                            }
+
+                            body {
+                                width: 100% !important;
+                                
+                                size-adjust: 100%;
+                                -ms-text-size-adjust: 100%;
+                                margin: 0;
+                                padding: 0;
+                                background-color: #FFFBF5;
+                                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                            }
+
+                            .ReadMsgBody {
+                                width: 100%;
+                            }
+
+                            .ExternalClass {
+                                width: 100%;
+                            }
+
+                            .backgroundTable {
+                                margin: 0 auto;
+                                padding: 0;
+                                width: 100% !important;
+                            }
+
+                            table td {
+                                border-collapse: collapse;
+                            }
+
+                            .ExternalClass * {
+                                line-height: 115%;
+                            }
+                            /* End reset */
+
+                            @media screen and (max-width: 630px) {
+                                *[class="mobile-column"] {
+                                    display: block;
+                                }
+                                *[class="mob-column"] {
+                                    float: none !important;
+                                    width: 100% !important;
+                                }
+                                *[class="hide"] {
+                                    display: none !important;
+                                }
+                                *[class="100p"] {
+                                    width: 100% !important;
+                                    height: auto !important;
+                                }
+                                *[class="condensed"] {
+                                    padding-bottom: 40px !important;
+                                    display: block;
+                                }
+                                *[class="center"] {
+                                    text-align: center !important;
+                                    width: 100% !important;
+                                    height: auto !important;
+                                }
+                                *[class="100pad"] {
+                                    width: 100% !important;
+                                    padding: 20px;
+                                }
+                                *[class="100padleftright"] {
+                                    width: 100% !important;
+                                    padding: 0 20px 0 20px;
+                                }
+                                *[class="100padtopbottom"] {
+                                    width: 100% !important;
+                                    padding: 20px 0px 20px 0px;
+                                }
+                            }
+                        </style>
+                        </head>
+                        <body style="padding: 0;margin: 0;background-color: #FFFBF5;size-adjust: 100%;-ms-text-size-adjust: 100%;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;width: 100% !important;">
+                            <?php if (!empty($showPdfLinks)) include (get_template_directory(). '/emails/partials/email_card_preview.php'); ?>
+                            <table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0" width="100%">
+                                <tr>
+                                    <td align="center" valign="top" style="border-collapse: collapse;">
+                                        <table width="696" cellspacing="0" cellpadding="0" bgcolor="#FFFBF5" class="100p">
+                                            <tr>
+                                                <td width="48" style="border-collapse: collapse;">&nbsp;</td>
+                                                <td width="600">
+                                                    <table width="600" cellspacing="0" cellpadding="0" bgcolor="#FFFBF5" class="100p">
+                                                        <tr>
+                                                            <td height="54" style="border-collapse: collapse;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table width="600" cellspacing="0" cellpadding="0" bgcolor="#FFFBF5" class="100p">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <img src="<?php echo home_url(); ?>/assets/img/tex-2.png" alt="A gift for you; an eCard from Texas de Brazil!" 
+                                                                                 style="border-radius: 7px; display: block;width: 80%;">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td height="40" style="border-collapse: collapse;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table width="600" cellpadding="0" cellspacing="0" bgcolor="#000000" class="100p">
+                                                                    <tr>
+                                                                        <td style="border-collapse: collapse;">
+                                                                            <table width="600" cellpadding="0" cellspacing="0" bgcolor="#000000" class="100p">
+                                                                                <tr>
+                                                                                    
+                                                                                    <td style="border-collapse: collapse;">
+                                                                                        <table cellpadding="0" cellspacing="0" bgcolor="#000000" width="100%" style="padding:0 28px;">
+                                                                                            <tr>
+                                                                                                <td height="1" bgcolor="#313534" style="border-collapse: collapse;"></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="27" style="border-collapse: collapse;">&nbsp;</td>
+                                                                                            </tr>
+
+                                                                                            <!--                                                                                            NEW PART-->
+
+
+
+
+                                                                                            <tr style="text-align:center;">
+
+
+                                                                                                <td>
+
+                                                                                                    <div>
+                                                                                                        <span style="color: #FFFFFF; font-size: 25px; line-height: 24px;text-align:center;">BONUS CARD NUMBER</span>
+                                                                                                    </div>
+                                                                                                    <div>
+                                                                                                        <span style="color: #8C908E; font-size: 25px; line-height: 24px; text-transform: uppercase;text-align:center;display: block;padding-bottom: 8px;padding-top: 15px;">
+                                                                                                            <?php
+                                                                                                            //echo $cardnumber;
+                                                                                                            $cardNumberSingle = false;
+                                                                                                            $searchString = ',';
+                                                                                                            if (strpos($cardnumber, $searchString) !== false) {
+                                                                                                                $cardnumber = explode(",", $cardnumber);
+                                                                                                                foreach ($cardnumber as $key => $value) {
+                                                                                                                    echo $value . '<br />';
+                                                                                                                }
+                                                                                                            } else {
+                                                                                                                echo $cardnumber;
+                                                                                                                $cardNumberSingle = true;
+                                                                                                            }
+                                                                                                            ?> 
+                                                                                                        </span>
+                                                                                                    </div>
+
+
+
+
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr style="text-align:center;">
+
+                                                                                                <td>
+
+
+
+                                                                                                    <?php if ($amount): ?>
+
+                                                                                                        <span style="color: #FFFFFF; font-size: 20px; line-height: 24px; text-transform: uppercase;text-align:center;" >$<?php echo $amount; ?></span> <?php else: ?>
+
+                                                                                                        <span style="color: #FFFFFF; font-size: 20px; line-height: 24px; text-transform: uppercase;text-align:center;" >$0.00</span> <?php endif; ?>
+
+
+
+                                                                                                </td>
+
+
+                                                                                            </tr>
+                                                                                            
+                                                                                            <?php
+                                                                                            if ($cardNumberSingle && $cardnumber && true) {
+                                                                                                require_once(get_template_directory() . '/create-bonuscard/barcode.php');
+                                                                                                $printCardNumber = str_replace(' ', '', $cardnumber);
+                                                                                                ?>
+                                                                                                <tr style="text-align:center;">
+                                                                                                    <td>
+                                                                                                        <?php
+                                                                                                        $filepath = get_template_directory() . '/create-bonuscard/barcodes/' . $printCardNumber . '.png';
+                                                                                                        barcode($filepath, $printCardNumber, 70, "horizontal", "code128", false, 1);
+                                                                                                        echo '<img style="width:65%;min-width:350px;margin-top:40px;" class="barcode-image" alt="' . $printCardNumber . '" src="' . get_template_directory_uri() . '/create-bonuscard/barcodes/' . $printCardNumber . '.png"/>';
+                                                                                                        ?>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            <?php } ?>
+
+
+
+
+
+
+
+
+                                                                                            <tr>
+                                                                                                <td height="27" style="border-collapse: collapse;">&nbsp;</td>
+                                                                                            </tr>
+
+
+                                                                                            
+
+                                                                                            <tr>
+                                                                                                <td height="15" style="border-collapse: collapse;"><hr/></td>
+                                                                                            </tr>
+
+
+                                                                                            <tr>
+                                                                                                <td height="20" style="border-collapse: collapse;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="27" style="border-collapse: collapse;"><a href="<?php echo home_url(); ?>/balance" style="font-size:25px;color: white;display: block;text-align: center;margin: 0px 0px 10px 0;">CHECK BALANCE</a></td>
+                                                                                            </tr>
+
+
+                                                                                            <tr>
+                                                                                                <td style="border-collapse: collapse;text-align:center;">
+
+                                                                                                    <table cellpadding="0" cellspacing="0" bgcolor="#000000" style="margin:auto;">
+                                                                                                        <tr>
+
+                                                                                                            <td style="border-collapse: collapse;">
+                                                                                                                <div>
+                                                                                                                    <span style="color: #FFFFFF; font-size: 20px; line-height: 24px;">REG CODE</span>
+                                                                                                                </div>
+                                                                                                                <div>
+                                                                                                                    <span style="color: #8C908E; font-size: 20px; line-height: 24px; text-transform: uppercase;">
+                                                                                                                        <?php
+                                                                                                                        $searchString = ',';
+                                                                                                                        if (strpos($regCode, $searchString) !== false) {
+                                                                                                                            $regcode = explode(",", $regCode);
+                                                                                                                            foreach ($regcode as $key => $value) {
+                                                                                                                                echo $value . '<br />';
+                                                                                                                            }
+                                                                                                                        } else {
+                                                                                                                            echo $regCode;
+                                                                                                                        }
+                                                                                                                        ?>  
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </table>
+
+
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr style="height:35px;">
+                                                                                                <td></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td><div style="padding:10px;text-align: center;color:white;font-size: 20px; line-height: 24px;">Valid from 1/1/24 to 4/30/24</div></td>
+                                                                                            </tr>
+                                                                                            
+
+
+
+
+
+                                                                                            <tr>
+
+                                                                                                <td>
+                                                                                                    <table cellpadding="0" cellspacing="0" bgcolor="#000000" width="100%">
+                                                                                                        <tr>
+                                                                                                           
+                                                                                                            <td width="100%" style="border-collapse: collapse;">
+                                                                                                                <table cellpadding="0" cellspacing="0" bgcolor="#000000" style="width:100%">
+                                                                                                                    <tr>
+                                                                                                                        <td width="100%" style="border-collapse: collapse;">
+                                                                                                                            <a href="<?php echo $ruleimage; ?>" target="_blank">
+                                                                                                                            <img src="<?php echo $ruleimage; ?>" alt="how to use instruction" 
+                                                                                                                                 style="border-radius: 7px; display: block;width: 95%;margin: auto;">
+                                                                                                                            </a>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                </table>
+                                                                                                            </td>
+
+                                                                                                        </tr>
+                                                                                                    </table>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="27" style="border-collapse: collapse;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                          
+                                                                                            
+                                                                                          
+                                                                                            <tr>
+                                                                                                <td align="center" style="border-collapse: collapse;">
+                                                                                                    <span style="color: #888888; font-size: 14px; line-height: 18px;"><?php the_field('confirmationCreditText', 'options'); ?></span>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="15" style="border-collapse: collapse;">&nbsp;</td>
+                                                                                            </tr>
+
+                                                                                            <tr>
+                                                                                                <td align="center" style="border-collapse: collapse;">
+                                                                                                    <a href="<?php echo home_url(); ?>/reservations/" style="color: #FFFFFF; font-size: 32px; line-height: 38px; font-weight: bold; text-decoration: none;">RESERVE NOW</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="15" style="border-collapse: collapse;">&nbsp;</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                    
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="40" style="border-collapse: collapse;">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="48" style="border-collapse: collapse;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </body>
+                        </html>
+                        <?php
+                        return ob_get_clean();
+                        

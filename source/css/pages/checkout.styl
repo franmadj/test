@@ -1,0 +1,366 @@
+.c-minimal-header
+	centeredBlock(100rem)
+	padding: 4rem 0
+	position: relative
+	text-align: center
+	&__back
+		border-color: #8E908D
+		font-size: 1.2rem
+		font-weight: 400
+		left: 0
+		line-height: 1
+		padding: 1rem 2rem
+		position: static
+		margin-bottom: 3.6rem
+		top: 4rem
+		&:hover
+			border-color: $primary
+			text-decoration: none
+			&:before
+				color: $white
+		&:before
+			color: $darkGray
+			content: $iconArrow
+			display: inline-block
+			font-family: $fontIcon
+			font-size: 2rem
+			line-height: 1
+			margin-right: 1.5rem
+			transform: rotate(90deg)
+			vertical-align: sub
+	&__logo
+		display: block
+		margin: 0 auto
+
+@media $desktop1
+	.c-minimal-header
+		&__back
+			position: absolute
+			margin-bottom: 1.5rem
+
+.u-checkout
+	&__grid
+		centeredBlock(100rem)
+		display: flex
+		flex-wrap: wrap
+		padding-bottom: 8rem
+		transition: all 0.33s ease
+		justify-content: space-between
+	&__col
+		centeredBlock(48rem)
+		&:last-child
+			margin-top: 2.4rem
+
+@media $desktop1
+	.u-checkout
+		&__col
+			flex: 1
+			flex-basis: 48%
+			&:last-child
+				flex-basis: 42%
+				margin-top: 0
+				max-width: 35rem
+
+.c-box
+	background: $darkGray
+	margin-bottom: 1.5rem
+	padding: 3.2rem
+	position: relative
+	&__heading
+		display: block
+		margin-bottom: 1.4rem
+	&__col
+		display: flex
+		flex-wrap: wrap
+	&__input
+		background: #191919
+		border: none
+		color: $white
+		margin: 0.1rem
+		width: 100%
+		&::-webkit-input-placeholder
+			color: #B9B7B2
+			font-weight: 400
+		&::-moz-placeholder
+			color: #B9B7B2
+			font-weight: 400
+		&:-ms-input-placeholder
+			color: #B9B7B2
+			font-weight: 400
+		&:-moz-placeholder
+			color: #B9B7B2
+			font-weight: 400
+		&--third
+			flex: 1 1 33.333333%
+			width: 33.333333%
+		&--safari
+			flex-basis: 100%
+	&__textarea
+		background: #191919
+		border: none
+		color: $white
+		flex: 1
+		margin: 0.1rem
+
+@media screen and (min-width: 580px)
+	.c-box
+		&__input
+			flex: 1
+
+@media screen and (min-width: 991px)
+	.u-payments-wrapper .choices + .choices
+		flex: 0.1 0.1 6rem
+	.u-credit-cvv
+		flex-grow: 0.445
+		margin-left: auto
+
+@media screen and (min-width: 1249px)
+	.c-box
+		&__input
+			&--safari
+				flex-basis: 0%
+
+.u-secure-encryption
+	display: block
+	font-size: 1.2rem
+	font-style: italic
+	line-height: 1
+	position: static
+	margin-bottom: 1.2rem
+	right: 3.2rem
+	top: 3.3rem
+	&:before
+		icon($iconLock)
+		font-size: 0.8rem
+		font-style: normal
+		margin-right: 0.6rem
+		position: relative
+		top: -1px
+
+@media $tablet
+	.u-secure-encryption
+		margin-bottom: 0
+		position: absolute
+
+.c-mini-cart
+	&__item
+		border-bottom: 1px solid #E8E5E0
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 2rem
+		padding-bottom: 2rem
+	&__qty,
+	&__price
+		flex: 0.75 0.75 50%;
+		line-height: 3.9rem
+	&__preview
+		flex: 1 1 100%
+		text-align: center
+		margin-bottom: 1.2rem
+	&__card
+		margin-right: 2rem
+		vertical-align: middle
+	&__price
+		font-weight: 300
+		text-align: right
+	&__card
+		max-width: 6rem
+	&__qty
+		color: #535553
+	&__title
+		font-size: 1.3rem
+
+@media $tablet
+	.c-mini-cart
+		&__preview
+			flex: 2.5
+			position: relative
+			text-align: left
+		&__card
+			position: absolute
+			left: 0
+		&__title
+			display: inline-block
+			margin-left: 8rem
+		&__qty,
+		&__price
+			flex: 0.75
+			line-height: 1.2
+
+.u-no-top
+	border-top: none
+	margin-top: 2.8rem
+	padding-top: 0
+
+.u-checkout-adjustment
+	font-size: 1.3rem
+	line-height: 2.4rem
+
+.u-checkout
+	&__col
+		div.choices
+			background: #212121
+			flex: 1
+		div.choices__item
+			background: #212121
+		.c-adjustments
+			padding-left: 0
+			padding-right: 0
+			&__amount
+				font-weight: 300
+			&--total
+				margin-top: 2.8rem
+				padding-top: 2.8rem
+				padding-bottom: 3.2rem
+			&--no-shipping
+				border-top: none
+				padding-top: 0
+
+.u-place-order
+	display: block
+	font-size: 1.3rem
+	line-height: 2.4rem
+	margin: 0 auto
+	text-align: center
+	transition: all 0.25s ease
+	width: 19.4rem
+	&.is-loading
+		background: gray
+		cursor: not-allowed
+		opacity: 0.33
+
+@media $tablet
+	.u-place-order
+		margin: 0
+
+.u-billing-address-input
+	margin: 1.9rem 0 0 !important
+	.u-conditions-text
+		&:before
+			margin-top: 0 !important
+
+.u-form-check
+	.u-form-check
+		&__input
+			&:checked + .u-form-check__label
+				&:before
+					icon($iconCheck)
+					background: #302f2f !important
+					color: #D29136
+					font-size: 8px
+					line-height: 1.4
+		&__label
+			font-size: 1.5rem
+			line-height: 2.4rem
+			color: $white
+			&:before
+				margin-top: 0.4rem
+
+.c-box
+	&--disabled
+		display: none
+
+.u-payments-wrapper
+	position: relative
+
+.u-credit-cvv
+	flex: none
+
+.u-cvv-info
+	&:before
+		background: url('/assets/img/info-button.png')
+		content: ''
+		display: block
+		display: block
+		height: 1.1rem
+		position: absolute
+		right: 1rem
+		bottom: 0.9rem
+		transform: translateY(-50%)
+		width: 1.1rem
+
+
+.c-tooltip
+	&--disabled
+		.c-tooltip
+			&__text
+				display: none
+	&__text
+		background: #333333
+		color: #FFFFFF
+		display: block
+		font-size: 1.4rem
+		font-weight: 400
+		left: calc(100% + 1.125rem)
+		line-height: 1.25
+		padding: 1.2rem 1.4rem 1.3rem
+		position: absolute
+		top: 0.2rem
+		width: 16rem
+		z-index: 100
+		&:before
+			border-color: transparent #333333 transparent transparent
+			border-style: solid
+			border-width: 6.5px 9.3px 6.5px 0
+			content: ''
+			height: 0
+			left: 0
+			position: absolute
+			transform: translateX(-98%)
+			width: 0
+			z-index: 10
+		strong
+			color: #FFF
+		p
+			margin-bottom: 0
+
+.u-error
+	box-shadow: inset 0 0 0 1px $error
+.u-error--select
+	border: 1px solid $error
+
+.c-adjustments--checkout
+	.c-methods__type,
+	.c-methods__amount
+		color: #b9b7b2
+
+
+.js-is-loading
+	opacity: 0.33
+	> div
+		pointer-events: none
+	&:hover
+		cursor: wait
+
+.unstyled
+	flex: 1
+	position: relative
+	select
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		background: #191919
+		border-radius: 0
+		border: none
+		color: #b9b7b2
+		font-family: Futura PT,futura-pt,Helvetica,sans-serif
+		font-size: 1.3rem
+		font-weight: 500
+		height: 3.6rem
+		letter-spacing: .05rem
+		line-height: 2.4rem
+		min-width: 100%
+		padding: .7rem 1rem .5rem
+		text-transform: uppercase
+		option
+			text-transform: capitalize
+	&:after
+		background-image: url('/assets/img/dropdown.svg')
+		background-repeat: no-repeat
+		content: ""
+		height: 1.4rem
+		position: absolute
+		right: 1.2rem
+		top: 50%
+		transform: translateY(-60%)
+		width: .9rem

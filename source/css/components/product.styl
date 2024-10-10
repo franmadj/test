@@ -1,0 +1,45 @@
+.c-product
+    margin-bottom: 2.4rem
+    text-align: center
+    display: block
+    &:hover
+        text-decoration: none
+    &__title
+        color: #141415
+        display: block
+        font-family: $fontOswald
+        font-size: 2.5rem
+        letter-spacing: 1.5px
+        line-height: 3.7rem
+        text-transform: uppercase
+    &__teaser
+        display: block
+        margin-bottom: 1.8rem
+        color: $baseColor
+    &__photo
+        display: block
+        margin: 0 auto 2.4rem
+    &__button
+        buttonReset() // Intentional order
+        background-color: $primary
+        color: $white
+        display: inline-block
+        font: 400 1.3rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        padding: 0.9rem 1.8rem 1.1rem
+        text-transform: uppercase
+
+        &:focus,
+        &:hover
+            background: mix($primary, $black, 90%)
+            color: $white
+            text-decoration: none
+
+        &:after
+            display: inline-block
+            font-size: 2.4rem
+            icon($iconArrow)
+            margin-left: 1.4rem
+            position: relative
+            top: 0.1rem
+            transform: rotate(-90deg)

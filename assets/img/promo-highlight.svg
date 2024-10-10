@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="705px" height="367px" viewBox="0 0 705 367" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 31</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="94.6247155%" y1="51.2162149%" x2="0%" y2="51.2162121%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0.6" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Promotions-List" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Promotions-List---XL" transform="translate(-720.000000, -1216.000000)" fill="url(#linearGradient-1)">
+            <g id="promo-full" transform="translate(17.000000, 1120.000000)">
+                <polygon id="Rectangle-31" transform="translate(1072.330349, 371.037176) rotate(-154.000000) translate(-1072.330349, -371.037176) " points="699.990796 123.133599 1260.92057 123.133599 1444.9908 294.602349 1340.36141 545.508599 1048.75543 619.133599 699.990796 619.133599"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

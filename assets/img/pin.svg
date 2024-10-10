@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>location-pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-20.0%" y="-20.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <rect id="path-2" x="4" y="4" width="17" height="17"></rect>
+    </defs>
+    <g id="Locations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Location-Map---XL" transform="translate(-799.000000, -352.000000)">
+            <g id="pins" transform="translate(156.000000, 221.000000)">
+                <g id="location-pin" transform="translate(644.000000, 132.000000)">
+                    <g transform="translate(2.000000, 2.000000)">
+                        <rect id="Rectangle-9" fill="#000504" opacity="0.349999994" filter="url(#filter-1)" transform="translate(12.500000, 15.500000) rotate(45.000000) translate(-12.500000, -15.500000) " x="5" y="8" width="15" height="15"></rect>
+                        <g id="Rectangle-9" transform="translate(12.500000, 12.500000) rotate(45.000000) translate(-12.500000, -12.500000) ">
+                            <use fill="#6E181E" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <rect stroke="#FFFFFF" stroke-width="2" x="3" y="3" width="19" height="19"></rect>
+                        </g>
+                        <rect id="Rectangle-5" fill="#FFFFFF" x="12" y="7" width="1" height="11" rx="0.5"></rect>
+                        <rect id="Rectangle-5" fill="#FFFFFF" x="7" y="12" width="11" height="1" rx="0.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+[2024-08-28T13:23:23] [ERROR] [ApiClient] : ApiException : [400] Error connecting to the API (https://api.cybersource.com/pts/v2/payments/7245909594966240704953/reversals)
+[2024-08-28T13:23:23] [ERROR] [ReversalApi] : ApiException : CyberSourceApi\ApiException: [400] Error connecting to the API (https://api.cybersource.com/pts/v2/payments/7245909594966240704953/reversals) in /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/vendor/cybersource/rest-client-php/lib/ApiClient.php:461
+Stack trace:
+#0 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/vendor/cybersource/rest-client-php/lib/Api/ReversalApi.php(197): CyberSourceApi\ApiClient->callApi('/pts/v2/payment...', 'POST', Array, '{"clientReferen...', Array, '\\CyberSourceApi...', '/pts/v2/payment...')
+#1 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/vendor/cybersource/rest-client-php/lib/Api/ReversalApi.php(110): CyberSourceApi\Api\ReversalApi->authReversalWithHttpInfo('724590959496624...', Object(CyberSourceApi\Model\AuthReversalRequest))
+#2 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Samples/Payments/Reversal/ProcessAuthorizationReversal.php(44): CyberSourceApi\Api\ReversalApi->authReversal('724590959496624...', Object(CyberSourceApi\Model\AuthReversalRequest))
+#3 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/AuthReversal48hDelay.class.php(154): ProcessAuthorizationReversal(Array)
+#4 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/AuthReversal48hDelay.class.php(75): AuthReversal48hDelay::reverse_transaction(Object(stdClass))
+#5 /home/webdevtexasdebra/public_html/wp-includes/class-wp-hook.php(324): AuthReversal48hDelay::trigger_cron()
+#6 /home/webdevtexasdebra/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 /home/webdevtexasdebra/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/webdevtexasdebra/public_html/wp-cron.php(191): do_action_ref_array('mycronjobtime_e...', Array)
+#9 {main}

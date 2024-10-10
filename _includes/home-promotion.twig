@@ -1,0 +1,60 @@
+<div class="home-promo" id="promo">
+    {% for promotion in entry.homePromotion %}
+        {% set isExisting = promotion.type == 'existing' %}
+        {% set promo = isExisting ? promotion.featuredPromotion[0] : promotion %}
+
+        <div class="home-promo__photo">
+            {% set size = {
+                mode: 'crop',
+                position: 'center-center',
+                width: 650,
+                height: 383,
+                quality: 85
+            } %}
+
+            {% set sizeRetina = size|merge({ width: 1136, height: 766 }) %}
+
+            <img
+                {% set image = promo.image[0] %}
+                {% set imageUrl = image.getUrl(size) %}
+
+                src="{{ imageUrl }}"
+                srcset="{{ image.getUrl(size) }} 1136w, {{ imageUrl }} 568w"
+                sizes="(min-width: 1024px) 40vw, 80vw"
+
+                alt="{{ image.altText|default('Texas Promotion') }}"
+
+                class="home-promo__image"
+            >
+
+            <img
+                alt=""
+                class="home-promo__frame"
+                {% set imgSrc = url('assets/img/textured-frame.png') %}
+                src="{{ imgSrc }}"
+                srcset="{{ url('assets/img/textured-frame@2x.png') }} 658w, {{ imgSrc }} 329w"
+                sizes="(min-width: 1024px) 25w, 50w"
+            >
+        </div>
+
+        <div class="home-promo__content">
+            {% if not isExisting %}
+                <h3 class="home-promo__intro t-align-left">{{ promo.teaser }}</h3>
+            {% endif %}
+
+            <h2 class="home-promo__title">
+                {{ isExisting ? promo.title : promo.lead }}
+            </h2>
+
+            <p class="home-promo__body">
+                {{ isExisting ? promo.teaser : promo.description  }}
+            </p>
+
+            {% if isExisting %}
+                <a href="{{ promo.url }}" class="home-promo__cta">{{ promotion.altText }}</a>
+            {% else %}
+                <a href="{{ promo.webLink }}" class="home-promo__cta">{{ promo.altText }}</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

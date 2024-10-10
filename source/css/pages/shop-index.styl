@@ -1,0 +1,137 @@
+.shop-interior
+    background-image: url($imgPath + 'bg-dual-pat.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 50% 20%
+
+@media $tablet
+    .u-product-list
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin-bottom: 9rem
+        .c-product
+            flex: 1 1 50%
+            margin-top: 3rem
+            max-width: 45rem
+
+.u-good-to-know
+    centeredBlock(110rem)
+    margin-bottom: 6.5rem
+    position: relative
+    &__heading
+        color: #141415
+        display: block
+        font-family: $fontOswald
+        font-size: 1.8rem
+        letter-spacing: 1px
+        line-height: 2.2rem
+        margin-bottom: 1.2rem
+        text-align: center
+        text-transform: uppercase
+
+@media $tablet
+    .u-good-to-know
+        border-bottom: 1px solid $lighterGray
+        padding: 0 0 6.5rem 13rem
+        &__heading
+            font-size: 1.5rem
+            left: 0
+            max-width: 6rem
+            position: absolute
+            text-align: right
+
+.u-card-support
+    margin-bottom: 6.5rem
+    text-align: center
+    &__heading
+        display: block
+        margin-bottom: 3.2rem
+    &__or
+        color: $lightGray
+        display: block
+        font-size: 1.6rem
+        line-height: 1
+        margin-bottom: 2rem
+
+@media $tablet
+    .u-card-support
+        &__call,
+        &__email,
+        &__or
+            display: inline-block
+        &__call,
+        &__email
+            font: 400 1.4rem/1.4em $fontOswald
+            letter-spacing: 1.5px
+        &__or
+            margin-left: 4.5rem
+            margin-right: 4.5rem
+
+.u-actions
+    position: relative
+    justify-content: center
+    max-width: 95%;
+    margin: 0 auto 4rem auto
+
+    &__item
+        flex-grow: 1
+        background: #000504
+        color: $white
+        margin: 0 2px;
+        padding: 1rem
+        text-align: center
+        width: 50%
+        &.-cart
+            &:before
+                icon($iconCart)
+                display: inline-block
+                margin-bottom: 0
+        &.-balance
+            &:before
+                background: url($imgPath + 'balance.svg')
+                background-repeat: no-repeat
+                background-position: 0 3px
+                content: ''
+                display: inline-block
+                width: 2rem
+                height: 2rem
+                margin-bottom: 0
+
+    &__title
+        display: inline-block
+        color: $white
+        font-family: $fontOswald
+        font-size: 1.3rem
+        font-weight: 400
+        letter-spacing: 0.02rem
+        line-height: 1.2
+        text-transform: uppercase
+        margin-left: 8px
+        &:hover
+            color: $white
+            text-decoration: none
+
+.u-cart
+    &:before
+        icon($iconCart)
+        display: inline-block
+        font-size: 1.6rem
+        line-height: 1.5
+        margin-right: 1.2rem
+        vertical-align: top
+
+@media $desktop1
+    .u-actions
+        flex-direction: column
+        position: absolute
+        right: 0
+        width: 8rem
+        max-width: none
+
+        &__item
+            width: 100%
+            margin: 0 0 2px 0
+
+        &__title
+            margin-left: 0

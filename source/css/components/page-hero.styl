@@ -1,0 +1,69 @@
+.page-hero
+    background-attachment: fixed     
+    background-size: cover
+    color: $white
+    min-height: 50rem
+    position: relative
+    spaced(1.6rem)
+
+    &:before
+        background-color: rgba(0, 0, 0, 0.1)
+        content: ''
+        cover()
+
+    @media $desktop1
+        height: 74.3rem
+
+    &__inner
+        marginCenter()
+        max-width: 32rem
+        left: 50%
+        padding: 0 1.6rem 0
+        position: absolute
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        &:before
+            background-color: rgba(0, 0, 0, 0.8)
+            background-image: url($imgPath + 'promo-decorator.png')
+            background-position: bottom
+            background-repeat: no-repeat
+            content: ''
+            height: 32rem
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: translate(-50%, -50%)
+            width: 24rem
+            z-index: -1
+
+    @media $tablet
+        &__inner
+            &:before
+                height: 30rem
+
+    @media $desktop1
+        &__inner
+            &:before
+                height: 24rem
+
+    @media $desktop1
+        &__inner
+            marginCenter('reset')
+            max-width: 53rem
+
+    &__title
+        color: $white
+        font-size: 4rem
+        letter-spacing: 3.12px
+        line-height: 1.2em
+        spaced(2.8rem)
+        text-align: center
+
+    &__subtitle
+        display: block
+        font-size: 1.8rem
+        font-weight: 400
+        letter-spacing: 0.3px
+        line-height: 1.5em
+        text-align: center

@@ -1,0 +1,38 @@
+.u-preload-logo
+	&__wrapper
+		height: 100%
+		left: 0
+		position: fixed
+		top: 0
+		width: 100%
+	&__container
+		height: auto
+		left: 50%
+		overflow: hidden
+		padding-top: 1rem
+		position: fixed
+		top: 50%
+		transform: translate(-50%, -50%)
+		width: 25rem
+	&__image
+		-webkit-animation-direction: alternate-reverse
+		animation-duration: 1.25s
+		animation-iteration-count: infinite
+		animation-name: bounceInOut
+		animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55)
+		width: 25rem
+
+@keyframes bounceInOut {
+	0% {
+		transform: translateY(0%)
+	}
+	25% {
+		transform: translateY(0%)
+	}
+	50% {
+		transform: translateY(125%)
+	}
+	100% {
+		transform: translateY(125%)
+	}
+}

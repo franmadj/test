@@ -1,0 +1,33 @@
+.s-group-dining
+    .home-group-dining
+        margin: 0
+
+    .button
+        &--accent-two
+            background-color: $accent2Buttons
+
+@media screen and (min-width: 999px)
+    .s-group-dining
+        .u-right-promo
+            .home-group-dining
+                &__inner
+                    background: url($imgPath + 'odd-shaped-overlay-right.svg')
+                    left: auto
+                    padding: 7.1rem 0 0 20.6rem
+                    right: 0
+
+.u-form-response
+	text-align: center
+	margin: 2.4rem auto 0
+	max-width: 30rem
+
+button:disabled
+    background: gray
+    opacity: 0.75
+    pointer-events: none
+
+
+.body--group-dining
+    .home-group-dining.block-catering
+        .button
+            min-width: 290px

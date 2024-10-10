@@ -1,0 +1,440 @@
+.header
+    background-color: $lighterSecondary
+    background-image: none!important
+    font-family: $fontOswald
+    height: 40px
+    position: relative
+    text-align: center
+    z-index: 2
+
+    .translate-mobile
+        &:after
+          content: "";
+          display: table;
+          clear: both;
+
+    &__button
+        buttonReset()
+        display: block
+        float: left
+        font-family: $fontOswald
+        font-size: 13px
+        height: 100%
+        letter-spacing: 1.5px
+        line-height: 40px
+        text-align: center
+        text-transform: uppercase
+        width: 50%
+
+        &:hover
+            text-decoration: none
+
+        &.-reserve
+            background: $primary
+            color: $white
+            font-weight: 400
+
+    &__mobile-logo
+        text-align: center
+        clear: both
+        display: inline-block
+        padding-top: 2rem
+        background-repeat: no-repeat
+        margin: 0 16px
+
+    &--fixed
+        background: $lighterSecondary
+        left: 0
+        position: fixed
+        top: 0
+        transform: translateY(-15rem)
+        transition: all .3s cubic-bezier(.215,.61,.355,1)
+        width: 100%
+        z-index: 9999
+        .nav
+            border: none
+            border-bottom: 1px solid #edeae3
+            &__list-item
+                &[data-ref="headerLogo"]
+                    .nav__link
+                        top: 0
+                        padding-bottom: 0.5rem
+            &__list
+                &.-main
+                    background: $lighterSecondary
+                    position: static
+                    width: 100%
+                    padding-top: 1.5rem
+            &__logo
+                width: 20rem
+
+        .reserve-button
+            padding-right: 4.8rem
+            right: -1.6rem
+            top: 4.4rem
+    &--is-fixed
+        transform: translateY(0%)
+    &--is-below-modal
+        z-index: 0
+
+.u-increase-margin
+	margin: 0 6.8rem
+
+@media screen and (min-width: 768)
+	.u-increase-margin
+		margin: inherit
+
+.nav
+    background: url('/assets/img/mobile-menu-bg.jpg')
+    background-color: #fffbf5
+    background-repeat: no-repeat
+    background-position: 16px center
+    background-size: cover
+    border-top: 0
+    height: 800px
+    left: 0
+    opacity: 100
+    padding: 24px 24px 0 40px
+    position: absolute
+    top: 40px
+    transition: visibility 0s linear, opacity 0.1s linear
+    visibility: visible
+    width: calc(100% - 16px)
+
+    &.-disabled
+        height: calc(99vh - 36px)
+        position: absolute
+        opacity: 0
+        transition: visibility 0s linear 0.15s, opacity 0.15s linear
+        visibility: hidden
+
+    &:after
+        background-color: $lighterSecondary
+        bottom: 0
+        content: ''
+        display: block
+        height: 20px
+        left: 0
+        position: absolute
+        width: 100vw
+
+    &__list
+        spaced(28px)
+
+        &.-sub,
+        &.-social
+            display: flex
+
+        &.-legal
+            margin-top: 20px
+
+            & ^[0]__link
+                color: $lightGray
+                font-family: $baseFont
+                font-size: 15px
+                letter-spacing: 0
+                line-height: 20px
+                text-transform: none
+
+        &.-sub
+            border-bottom: 1px solid rgba(57,64,56,0.5)
+            border-top: 1px solid rgba(57,64,56,0.5)
+            flex-wrap: wrap
+            margin-left: auto
+            margin-right: auto
+            max-width: 320px
+            padding: 26px 8px 20px
+            spaced(23px)
+
+            & ^[0]__list-item
+                text-align: left
+                width: 50%
+
+            & ^[0]__link
+                font-size: 13px
+                padding: 3px 0
+                trBase()
+
+        &.-social
+            left: 50%
+            max-width: 375px
+            position: relative
+            spaced(0)
+            transform: translateX(-50%)
+            width: 110%
+
+            & ^[0]__list-item
+                width: 25%
+
+            & ^[0]__link
+                display: block
+                overflow: hidden
+                padding: 10px
+                position: relative
+                width: auto
+
+                &.-facebook,
+                &.-twitter,
+                &.-instagram,
+                &.-pinterest
+                    &:before
+                        color: $primary
+                        font-family: $fontIcon
+                        font-size: 31px
+
+                    &:hover
+                        &:before
+                            color: mix($primary, $white, 92%)
+
+                &.-facebook
+                    &:before
+                        content: $iconFacebook
+
+                &.-twitter
+                    &:before
+                        content: $iconTwitter
+
+                &.-instagram
+                    &:before
+                        content: $iconInstagram
+
+                &.-pinterest
+                    &:before
+                        content: $iconPinterest
+
+            & ^[0]__link-label
+                left: 100%
+                position: absolute
+                top: 100%
+
+    &__list-item
+        text-align: center
+        text-transform: uppercase
+
+    &__link
+        color: $white
+        display: block
+        font-size: 20px
+        font-weight: 400
+        letter-spacing: 1.5px
+        padding: 11px 0
+
+        &.-cart
+            &:before
+                content: $iconCart
+                font-family: fontello
+                margin-right: 15px
+
+            &:after
+                content: ' (' attr(data-count) ')'
+
+        &:hover
+            color: mix($white, $black, 75%)
+            text-decoration: none
+
+        &.-active
+            color: #d29136
+
+    &__logo
+        width: 18rem
+
+@media screen and  (max-device-width : 1024px) and (orientation:landscape)
+	.nav__logo
+		width: 12rem !important
+
+@media $tablet
+
+  .nav__logo
+    width: 20rem
+
+@media $desktop1
+    .header,
+    .nav
+        height: 32px
+
+    .nav
+        width: 100%
+        background: transparent
+        border: 0
+        border-left: 16px solid $lighterSecondary
+        border-right: 16px solid $lighterSecondary
+        color: $white
+        left: auto
+        padding: 0
+        position: relative
+        top: auto
+
+        &:after
+            content: none
+
+        &__list
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 20%, #000000 100%)
+            display: flex
+            justify-content: center
+            left: 0
+            padding-top: 20px
+            position: absolute
+            spaced(0)
+            top: 32px
+            width: 100%
+
+            &.-sub,
+            &.-social
+                background-image: none
+                left: auto
+                padding-top: 0
+                position: relative
+                top: auto
+                width: 100%
+
+            &.-sub
+                border: 0
+                height: 32px
+                max-width: none
+                padding: 0
+                spaced(0)
+
+                & ^[0]__list-item
+                    position: relative
+                    width: 20%
+
+                    &:after
+                        color: $lightSecondary
+                        icon($iconDivider)
+                        font-size: 13px
+                        position: absolute
+                        right: -1px
+                        top: 4px
+
+                    &:last-of-type
+                        &:after
+                            content: none
+
+                & ^[0]__link
+                    color: #515152
+                    font-size: 12px
+                    font-weight: 400
+                    text-align: center
+
+                    &:hover
+                        color: $primary
+
+            &.-social
+                height: 100%
+                left: auto
+                transform: none
+                width: 100%
+
+                & ^[0]__list-item
+                    max-width: 42px
+
+                    &:after
+                        content: none
+
+                & ^[0]__link
+                    height: 100%
+                    padding: 4px 0 0
+
+                    &.-facebook,
+                    &.-twitter,
+                    &.-instagram,
+                    &.-pinterest
+                        &:before
+                            font-size: 16px
+
+                        &:hover
+                            &:before
+                                color: mix($primary, $white, 85%)
+
+        &__link
+            font-weight: 400
+            font-size: 15px
+            padding: 10px 16px
+
+            &.-cart
+                &:before
+                    color: $primary
+                    margin-right: 10px
+
+                &:after
+                    color: $lightGray
+
+                &:hover
+                    &:after
+                        color: $primary
+
+        &--has-modifier
+            border-bottom: 1px solid #EDEAE3 !important
+
+        [data-ref="headerLogo"] a
+            padding-top:0
+
+    .nav
+        &__list
+            &.-main
+                padding-left: 6.4rem
+
+                .nav
+                    &__link
+                        overflow: hidden
+                        position: relative
+                        &:hover
+                            &:before
+                                top: 1.1rem
+                            .nav__link
+                                &-text
+                                    top: 3rem
+                        &:before
+                            color: $accent2
+                            content: attr(data-content)
+                            display: block
+                            position: absolute
+                            top: -100%
+                            transition: top 0.3s cubic-bezier(.215,.61,.355,1)
+                    &__list-item
+                        position: relative
+                    &__link-text
+                        display: block
+                        position: relative
+                        top: 0
+                        transition: top 0.3s cubic-bezier(.215,.61,.355,1)
+    .header
+        &--interior
+            border-left: 16px solid transparent
+            border-right: 16px solid transparent
+            .nav
+                &__list
+                    background: none
+                &__link
+                    color: $darkGray
+                    &.-active
+                        color: $accent2
+        &--fixed
+            .nav__link
+                color: $darkGray
+                font-size: 1.4rem
+                padding-top: 8px
+
+@media $desktop2
+    .body--homepage
+        .nav__link
+            padding: 11px 58px
+
+    .nav
+        &__link
+            padding: 11px 30px
+
+        &__logo
+            width: 21.9rem
+
+
+@media screen and (max-width: 580px)
+	.header
+		&__button
+			&--separator
+				border-bottom: 1px solid #E9E5DB
+
+.nav.-disabled
+	.nav
+		&__list
+			display: none

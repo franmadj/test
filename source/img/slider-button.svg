@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="30px" viewBox="0 0 32 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage---XS" transform="translate(-128.000000, -1582.000000)">
+            <g id="experience" transform="translate(16.000000, 1248.000000)">
+                <g id="Group-11" transform="translate(103.000000, 329.000000)">
+                    <g id="Group-9" transform="translate(10.000000, 6.000000)">
+                        <path d="M10.3724456,27.6610963 C4.58032271,25.7519063 0.405405405,20.3570045 0.405405405,14 C0.405405405,7.64299547 4.58032271,2.24809374 10.3724456,0.338903701 L10.3724456,27.6610963 Z M19.6275544,0.338903701 C25.4196773,2.24809374 29.5945946,7.64299547 29.5945946,14 C29.5945946,20.3570045 25.4196773,25.7519063 19.6275544,27.6610963 L19.6275544,0.338903701 Z" id="Combined-Shape" stroke="#D98E27" stroke-width="1.37837842" opacity="0.229999989"></path>
+                        <ellipse id="Oval-2" fill="#D98E27" cx="15" cy="14" rx="11.7567568" ry="11.6"></ellipse>
+                        <polygon id="Rectangle-3" fill="#FFFFFF" points="12.972973 11.2 17.8378378 14.4 12.972973 17.6"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

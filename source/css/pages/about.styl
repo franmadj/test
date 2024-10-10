@@ -1,0 +1,633 @@
+.about-us-hero
+    &_content
+        position: relative
+        color: $white
+        background: url($imgPath + 'about/about-hero-black-overlay-mobile@2x.png') center no-repeat
+        text-align: center
+        background-size: 200px 310px
+        padding: 5rem 0
+
+        h1
+            color: $lighterSecondary
+            font-size: 3.2rem
+            line-height: 1.1
+            letter-spacing: 1px
+            margin: 0 0 4rem
+            padding: 10px 0 0 0
+        p
+            font-size: 1.6rem
+            color: #F9F9F9
+            margin: 0 auto 10px auto
+            max-width: 52rem
+
+    .white-hr
+        background: url($imgPath + 'about/about-hero-hr@2x.png') no-repeat
+        background-position: top
+        background-size: auto 100%
+        display: block
+        margin: 0 auto 30px auto
+        height: 33px
+
+.about-history
+        background: url($imgPath + 'about/about-offwhite-bg@2x.png') 170px -224px no-repeat
+        background-size: 30em
+
+        &_content
+            max-width: 956px
+            margin: 0 auto
+            padding: 5rem 0 0 0
+
+            h1
+                text-align: center
+                font-size: 3.2rem
+                margin-bottom: 4.5rem
+
+            .ahc-block
+                color: #363434
+                display: inline-block
+                font-size: 1.6rem
+                line-height: 1.6
+                margin: 0 15px
+                vertical-align: top
+
+.red-hr
+    background: url($imgPath + 'about/red-hr@2x.png') no-repeat
+    background-position: top
+    background-size: auto 100%
+    display: block
+    margin: 1.5rem auto 6rem auto
+    height: 33px
+
+.about-chef
+    position: relative
+    max-width: 1232px
+    margin: 0 auto
+    z-index: 10
+
+    &__content
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        background: url($imgPath + 'about/about-offwhite-bg.png') center no-repeat
+
+    &__col
+         flex-basis: 100%
+         text-align: center
+
+    &__intro
+        margin-bottom 6rem
+
+    &__img
+        margin-bottom: 4rem
+        max-height: 60rem
+
+    &__subtitle
+        font-family: $fontOswald, Helvetica, sans-serif
+        font-size: 1.6rem
+        font-weight: 300
+        color #8C908E
+        letter-spacing 2px
+        margin-bottom 2rem
+
+    &__title
+        font-size 3.2rem
+        letter-spacing: 0.1em
+        margin-bottom: 5rem
+
+    &__txt
+        color: #363434
+        text-align: left
+        max-width: 60rem
+        margin: 0 auto
+
+.about-quote
+    background: #000
+    color: white
+    margin-bottom 1rem
+    padding: 2rem 2rem 3rem 2rem
+    text-align center
+    width: 100%
+
+    &__frame
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-around
+        flex-wrap: wrap
+
+    &__txt
+        font-size: 1.6rem
+        position: relative
+        padding: 2rem 2rem 0 2rem
+
+    &__txt:before
+        display: block
+        content: ""
+        width: 2rem
+        height: 2rem
+        background: url($imgPath + 'icn-quote.svg') center no-repeat
+        position: absolute
+        top: 0
+        left: 0
+
+    &__by
+        font-family: $fontOswald, Helvetica, sans-serif
+        font-size: 1.3rem
+        letter-spacing: 0.2em
+
+@media $desktop1
+    .about-us-hero
+        &_content
+            background: url($imgPath + 'about/about-hero-black-overlay@2x.png') center no-repeat
+            background-size: 310px
+
+            h1
+                font-size: 4.8rem
+                padding: 0
+
+            p
+                font-size: 1.8rem
+
+    .about-history
+        &_content
+            padding: 6rem 0 0 0
+
+            h1
+                font-size: 3.2rem
+                margin-bottom: 5.5rem
+
+            .ahc-block
+                font-size: 1.9rem
+                width: 46%
+                margin-bottom: 4rem
+
+    .red-hr
+            margin-top: 0rem
+
+
+    .about-chef
+        &__col
+            flex-basis: 50%
+            text-align: left
+        &__img
+            display: block
+            width: 92%
+            margin-left: auto
+            margin-right: auto
+            max-height: none
+        &__intro
+            padding-top: 8rem
+            max-width: 42rem
+            margin: 0 auto
+        &__subtitle
+            margin-bottom: 3.2rem
+        &__title
+            font-size: 4.8rem
+            margin-bottom: 3.2rem
+        &__txt
+            font-size: 1.8rem
+
+    .about-quote
+        padding: 4rem 3.2rem
+        max-width: 33rem
+        flex-wrap: nowrap
+        justify-content: space-between
+
+        &__txt
+            font-size: 1.8rem
+            font-style: italic
+
+@media $desktop2
+    .about-chef
+        &__img
+            margin-bottom: 0
+        &__content
+            margin-bottom -5rem
+
+// TO BE REVISITED
+
+// .about-chef
+//         min-height: 824px
+//         margin: 5px auto -56px auto
+//         position: relative
+//         z-index: 10
+//         max-width: 1200px
+//
+//         &-content
+//             background: url($imgPath + 'about/about-offwhite-bg.png') center no-repeat
+//             max-width: 1140px
+//             margin: 0 auto
+//
+//         .ac-col
+//             width: 568px;
+//             display: inline-block
+//             vertical-align: middle
+//             height: 824px;
+//
+//             &-content
+//                 padding: 30px 10px 0 120px
+//
+//             h4
+//                 color: $lightGray
+//                 font-family: $fontOswald !important
+//                 font-weight: 300
+//                 letter-spacing: 1px
+//                 font-size: 16px
+//                 margin-bottom: 37px
+//                 text-transform: uppercase
+//
+//             h1
+//                 color: $darkGray
+//                 font-size: 32px
+//                 line-height: 40px
+//                 letter-spacing: 3px
+//                 max-width: 330px
+//                 margin-bottom: 32px
+//                 text-transform: uppercase
+//
+//             p
+//                 line-height: 1.4
+//                 font-size: 1.8rem
+//                 color: #363434
+//
+//         .col-left
+//             margin: 47px 0
+//
+//             &-content
+//                 display: block
+//                 width: 100%
+//                 height: 100%
+//
+//
+//             .btn-about-chef
+//                 display: inline-block
+//                 background: rgba(0,0,0,0.8) url(/assets/img/about/about-play.png) 15px no-repeat
+//                 margin-left: auto
+//                 color: $white
+//                 vertical-align: middle
+//                 font-family: Oswald
+//                 padding: 18px 20px 18px 60px
+//                 border-radius: 99px
+//                 font-weight: 400
+//                 font-size: 13px
+//                 letter-spacing: 0.125rem
+//                 margin-right: auto
+//                 position: relative
+//                 top: 50%
+//                 left: 50%
+//                 transform: translateY(-50%) translateX(-50%)
+//
+//             .chef-popup, .chef-popup:hover
+//                 border: none
+//                 outline: none
+//
+//
+//     .about-chef-purchase
+//
+//         margin-top: 55px
+//
+//         &-thumb
+//             float: left
+//             margin-right: 48px
+//
+//         &-content
+//
+//             p
+//                 font-size: 15px !important
+//                 line-height: 24px !important
+//                 max-width: 400px
+//
+//     .about-quote-frame
+//         margin-top: -98px;
+//
+//     .about-quote
+//         display: inline-block
+//         width: 361px
+//         height: 224px
+//         color: #fff
+//         margin-left: 75px
+//         margin-bottom: 20px
+//         background: #000 url($imgPath + 'about/about-quote.png') 30px 35px no-repeat
+//
+//     .about-quote-content
+//         padding: 55px
+//
+//         p
+//             font-size: 18px
+//             line-height: 24px
+//             font-weight: 400
+//             font-style: italic
+//
+//             strong
+//                 font-weight: 400
+//
+//         .by
+//             font-size: 13px
+//             font-family: $fontOswald
+//             letter-spacing: 1px
+//             text-align: center
+//             font-weight: 400
+//             text-transform: uppercase
+//
+//     .about-quote:nth-child(3n+1)
+//             margin-left: 0
+//
+// @media screen and (-webkit-min-device-pixel-ratio: 2)
+//     .about-chef-content
+//         background: url($imgPath + 'about/about-offwhite-bg@2x.png') center no-repeat
+//         -webkit-background-size: 514px 488px
+//     .btn-about-chef
+//         background: rgba(0,0,0,0.8) url($imgPath + 'about/about-play@2x.png') 15px no-repeat !important
+//         -webkit-background-size: 39px 37px !important
+//     .about-quote
+//         background: #000 url($imgPath + 'about/about-quote@2x.png') 30px 35px no-repeat
+//         -webkit-background-size: 19px 17px !important
+
+
+
+.about-charity
+    min-height: 790px
+    color: $lightGray
+    margin-top: -20px
+
+    &:before
+        background: none
+
+    &-content
+        margin: 0 auto 0 0
+
+.black-overlay
+    background: rgba(0,0,0,.9)
+    margin: 67px 0 0 40px
+    max-width: 470px
+    padding: 50px
+
+    h2
+        color: $white
+        font-size: 32px
+        line-height: 40px
+        letter-spacing: 1px
+        max-width: 310px
+        margin-bottom: 21px
+
+    p
+        font-size: 1.8rem
+        line-height: 1.4
+
+    .btn-red-arrow
+        background: #6e181e url($imgPath + 'about/red-btn-arrow.png') 90% 50% no-repeat
+        margin-top: 0
+        position: relative
+        display: inline-block
+        font-size: 15px
+
+@media screen and (-webkit-min-device-pixel-ratio: 2)
+    .about-charity .btn-red-arrow
+        background: #6e181e url($imgPath + 'about/red-btn-arrow@2x.png') 90% no-repeat !important
+        -webkit-background-size: 24px 11px !important
+
+@media $desktop2
+    .black-overlay
+        max-width: 600px
+
+.about-community
+        background: url($imgPath + 'about/community-bg.png') 100px 0 no-repeat
+
+        &-content
+            max-width: 1023px
+            margin: 0 auto
+            padding: 68px 0
+
+            h1
+                text-align: center
+                font-size: 32px
+                line-height: 47px
+                margin-bottom: 60px
+                letter-spacing: 2px
+
+            h2
+                font-size: 23px
+                line-height: 34px
+                margin-bottom: 14px
+                letter-spacing: 1px
+
+            .acc-block
+                color: #363434
+                display: inline-block
+                font-size: 18px
+                line-height: 26px
+                max-width: 448px
+                margin: 0 25px
+                vertical-align: top
+
+
+// START GENERIC MEDIA QUERIES
+
+
+.clearfix
+    clear: both
+
+@media screen and (max-width: 1234px)
+
+    // .about-chef
+    //     max-width: 1024px
+    //     &-content
+    //         max-width: 1000px
+    //     .ac-col
+    //         max-width: 50%
+    //         &-content
+    //             padding: 103px 10px 0 50px
+
+    // .about-quote-frame
+    //     text-align: center
+    //
+    // .about-quote
+    //     margin: 25px
+    //
+    // .about-quote:nth-child(3n+1)
+    //     margin: 25px
+
+    .about-community
+        max-width: 1024px
+        &-content
+            max-width: 1000px
+        .acc-block
+            max-width: 50%
+            margin: 0
+            padding: 0 25px
+
+@media screen and (max-width: 769px)
+
+    // .about-chef
+    //     max-width: 100%
+    //     &-content
+    //         max-width: 100%
+    //     .ac-col
+    //         max-width: 100%
+    //         margin: 0 auto
+    //         display: block
+    //         &-content
+    //             padding: 103px 10px 0 50px
+
+    // .about-quote-frame
+    //     text-align: center
+    //     margin-top: -160px
+    //
+    // .about-quote, .about-quote:nth-child(3n+1)
+    //     margin: 25px
+    //     height: auto
+
+    .about-community
+        max-width: 100%
+        &-content
+            max-width: 100%
+        .acc-block
+            max-width: 100%
+            display: block
+            margin: 0
+            padding: 0 25px
+
+
+@media screen and (max-width: 415px)
+    .red-hr
+        background-position: center
+        max-width: 100%
+    // .about-quote-frame
+    //     margin-top: -30px
+    // .about-quote, .about-quote:nth-child(3n+1)
+    //     margin: 25px 0
+    //     width: 100%
+    //     height: auto
+
+    // .about-chef
+    //     &-content
+    //         background-position: top center
+    //     h4, h1
+    //         text-align: center
+    //     h4
+    //         margin-bottom: 17px !important
+    //
+    //     .col-left
+    //         max-height: 70px
+    //         background: none !important
+    //     .col-right
+    //         .ac-col-content
+    //             padding: 40px 25px 0 25px
+
+    // .about-chef-purchase
+    //     &-thumb, &-content
+    //         width: 100%
+    //         display: block
+    //         margin: 0
+    //         text-align: center
+    //     &-thumb
+    //         padding: 0 0 10px 0
+
+    // .about-quote, .about-quote:nth-child(3n+1)
+    //     margin: 10px 0
+
+    .hero.about-charity
+        padding-top: 25px
+
+    .about-charity
+        min-height: auto
+        .black-overlay
+            margin: 0 10px
+            padding: 25px
+
+
+.about-modal
+    height: 100%
+    left: 50%
+    max-height: 36.6rem
+    max-width: 52rem
+    position: fixed
+    text-align: center
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+    z-index: 45
+    &__content
+        height: 100%
+        left: 0
+        overflow: auto
+        padding: 2px
+        position: absolute
+        top: 0
+        width: 100%
+    &__video
+        position: relative
+        padding-bottom: 56.26%
+        padding-top: 30px
+        height: 0
+        overflow: hidden
+        iframe, object, embed
+            position:absolute
+            top:0
+            left:0
+            width:100%
+            height:100%
+
+.about-modal-close
+    background: $primary
+    cursor: pointer
+    height: 5rem
+    position: fixed
+    right: 0
+    top: 4.8rem
+    width: 16rem
+    z-index: 50
+    &:before
+        color: $white
+        content: '\e809'
+        font-family: $fontIcon
+        font-size: 2rem
+        left: 0
+        line-height: 5rem
+        margin: 0 auto
+        position: absolute
+        right: 0
+        text-align: center
+
+.about-modal-overlay
+    background: rgba(0,0,0,0.85)
+    height: 100%
+    left: 0
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 40
+
+.btn-red-arrow
+    color: #fff
+    letter-spacing: 1px
+    font-size: 13px
+    font-family: $fontOswald
+    text-transform: uppercase
+    border: none
+    cursor: pointer
+    padding: 13px 60px 13px 25px
+    background: #6e181e url($imgPath + 'about/red-btn-arrow.png') 90% 50% no-repeat
+
+    &:hover
+        color: $white
+        text-decoration: none
+
+@media screen and (-webkit-min-device-pixel-ratio: 2)
+    .btn-red-arrow
+        -webkit-background-size: 24px 11px !important
+        background: #6e181e url($imgPath + 'about/red-btn-arrow@2x.png') 91px no-repeat
+
+.u-file-label
+	display: block !important
+	margin: 0 0 0 0.7rem
+	padding: 1.2rem 0
+	text-align: center
+	top: 0
+.u-file-input
+	height: 0.1px
+	opacity: 0
+	overflow: hidden
+	position: absolute
+	width: 0.1px
+	z-index: -1

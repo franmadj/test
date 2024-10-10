@@ -1,0 +1,64 @@
+.awards
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    spaced(6.6rem)
+
+    @media $desktop1
+        align-items: stretch
+        flex-wrap: nowrap
+        lifted(15rem)
+        marginCenter()
+        max-width: 123rem
+
+    &__award
+        min-height: 24rem
+        spaced(1.6rem)
+        width: 100%
+
+        @media $desktop1
+            flex-basis: calc((100% / 3) - (7.4rem / 3))
+            margin-right: 7.4rem
+            spaced(0)
+
+        &:last-child
+            spaced(0)
+
+            @media $desktop1
+                margin-right: 0
+
+.award
+    background-color: $black
+    color: $white
+    font-family: $fontOswald
+    font-size: 1.5rem
+    height: 100%
+    letter-spacing: 1.5px
+    line-height: 1.5em
+    padding: 4.8rem
+    text-align: center
+    text-transform: uppercase
+
+    &__name
+        display: block
+
+        &:before
+            background-color: $accent2
+            content: ''
+            display: block
+            height: 0.1rem
+            marginCenter()
+            spaced(2.4rem)
+            width: 3.5rem
+
+    &__year
+        display: inline-block
+        opacity: 0.8
+        spaced(1.6rem)
+        white-space: nowrap
+
+    &__image
+        display: block
+        marginCenter()
+        max-height: 6.8rem
+        max-width: 16.5rem

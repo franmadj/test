@@ -1,0 +1,31 @@
+.pagination
+    color: $black
+    font: 1.3rem/1.5em $fontOswald
+    marginCenter()
+    max-width: 32rem
+    padding: 1.6rem
+    text-align: center
+    text-transform: uppercase
+
+    &__prev,
+    &__next
+        &:hover
+            text-decoration: none
+
+        &:before,
+        &:after
+            display: inline-block
+            font-size: 1.5rem
+    &__prev
+        margin-right: 1.6rem
+
+        &:before
+            icon($iconArrow)
+            transform: rotate(90deg)
+
+    &__next
+        margin-left: 1.6rem
+
+        &:after
+            icon($iconArrow)
+            transform: rotate(-90deg)

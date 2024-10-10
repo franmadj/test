@@ -1,0 +1,303 @@
+[2024-08-30T01:09:21] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T01:09:21] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T01:09:21] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T01:09:21] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T01:09:21] [INFO] [TransactionDetailsApi] : CALL TO METHOD getTransaction STARTED
+[2024-08-30T01:09:21] [DEBUG] [TransactionDetailsApi] : Resource : GET /tss/v2/transactions/7247201066116252803983
+[2024-08-30T01:09:21] [DEBUG] [TransactionDetailsApi] : Body Parameter :
+
+[2024-08-30T01:09:21] [DEBUG] [TransactionDetailsApi] : Return Type : \CyberSourceApi\Model\TssV2TransactionsGet200Response
+[2024-08-30T01:09:21] [INFO] [ApiClient] : CALLING API "/tss/v2/transactions/7247201066116252803983" STARTED
+[2024-08-30T01:09:21] [DEBUG] [ApiClient] : Request Headers :
+Accept:  application/hal+json;charset=utf-8
+Content-Type:  application/json
+v-c-merchant-id: tdb_gc_corp
+Signature: keyid="XXXXX", algorithm="HmacSHA256", headers="host date request-target v-c-merchant-id", signature="FFN9XGEe5Tf6lEZ1qynPFBSaT+QClnPwKF8LOgQGYC4="
+Host: api.cybersource.com
+Date: Fri, 30 Aug 2024 1:09:21 GMT
+v-c-client-id: 
+[2024-08-30T01:09:21] [DEBUG] [ApiClient] : HTTP Request Body:
+
+[2024-08-30T01:09:21] [DEBUG] [ApiClient] : HTTP Response Body:
+{"id":"7247201066116252803983","rootId":"7247201066116252803983","reconciliationId":"496273036","submitTimeUTC":"2024-08-27T00:55:06Z","merchantId":"tdb_gc_corp","applicationInformation":{"reasonCode":100,"applications":[{"name":"ics_auth","reasonCode":"100","rCode":"1","rFlag":"SOK","reconciliationId":"496273036","rMessage":"Request was processed successfully.","returnCode":1010000}]},"buyerInformation":{"merchantCustomerId":"wc-guest-471007"},"clientReferenceInformation":{"code":"471007","applicationName":"REST API","applicationVersion":"1.0","partner":{"solutionId":"E39VEQD3"}},"consumerAuthenticationInformation":{"eciRaw":"7","strongAuthentication":[]},"deviceInformation":{"ipAddress":"104.251.245.213"},"errorInformation":{"message":"Request was processed successfully."},"installmentInformation":[],"fraudMarkingInformation":[],"merchantInformation":{"merchantDescriptor":{"name":"tdb_gc_corp"}},"orderInformation":{"billTo":{"firstName":"xxxxx","lastName":"xxxxx","address1":"9 Sprinklewood Ct","locality":"Potomac","administrativeArea":"MD","postalCode":"20854","email":"xxxxx","country":"US","phoneNumber":"xxxxx"},"shipTo":{"firstName":"xxxxx","lastName":"xxxxx","address1":"9 Sprinklewood Ct","locality":"Potomac","administrativeArea":"MD","postalCode":"20854","country":"US"},"amountDetails":{"totalAmount":"100","currency":"USD","taxAmount":"0","authorizedAmount":"100"},"shippingDetails":[],"invoiceDetails":[],"lineItems":[{"productCode":"default","productName":"E-Gift Card - 100","productSku":"932","taxAmount":0,"quantity":1,"unitPrice":100,"fulfillmentType":"P "},{"productCode":"shipping_and_handling","productName":"No shipping","productSku":"free_shipping","taxAmount":0,"quantity":1,"unitPrice":0,"fulfillmentType":"P "}]},"paymentInformation":{"customer":[],"paymentInstrument":[],"instrumentIdentifier":[],"shippingAddress":[],"paymentType":{"name":"vital","type":"xxxxx","method":"MC"},"card":{"suffix":"4990","prefix":"542418xxxxx","expirationMonth":"xxxx","expirationYear":"xxxx","type":"xxxxx"},"invoice":[],"accountFeatures":[],"fluidData":[],"issuerInformation":{"country":"US"},"paymentAccountInformation":{"card":[],"features":[],"network":[]}},"paymentInsightsInformation":{"responseInsights":[],"ruleResults":[]},"payoutInformation":{"pushFunds":[],"pullFunds":[]},"payoutOptions":[],"processingInformation":{"paymentSolution":"MasterCard","commerceIndicator":"7","commerceIndicatorLabel":"internet","authorizationOptions":{"authType":"O","initiator":{"merchantInitiatedTransaction":[]},"cardVerificationIndicator":false},"bankTransferOptions":[],"japanPaymentOptions":[],"fundingOptions":{"firstRecurringPayment":false},"ecommerceIndicator":"7","reconciliationId":"496273036","captureOptions":[]},"processorInformation":{"processor":{"name":"vital"},"approvalCode":"24541P","responseCode":"00","avs":{"code":"Y","codeRaw":"Y"},"cardVerification":{"resultCode":"M"},"achVerification":{"resultCodeRaw":"00"},"electronicVerificationResults":[]},"pointOfSaleInformation":[],"riskInformation":{"score":[]},"recipientInformation":[],"senderInformation":{"paymentInformation":{"customer":[],"paymentType":{"name":"vital","type":"xxxxx","method":"MC"},"card":{"suffix":"4990","expirationMonth":"xxxx","expirationYear":"xxxx","type":"xxxxx"},"invoice":[],"accountFeatures":[],"fluidData":[],"issuerInformation":[],"paymentAccountInformation":[]}},"tokenInformation":[],"_links":{"self":{"href":"https:\/\/api.cybersource.com\/tss\/v2\/transactions\/7247201066116252803983","method":"GET"},"relatedTransactions":[{"href":"https:\/\/api.cybersource.com\/tss\/v2\/transactions\/7247871108266305404975","method":"GET"}]},"recurringPaymentInformation":[],"unscheduledPaymentInformation":[]}
+[2024-08-30T01:09:21] [DEBUG] [TransactionDetailsApi] : Response Headers :
+HTTP/1.1 200
+X-OPNET-Transaction-Trace = a2_24f79697-40de-41d4-9e2a-b151afb79928-1084339-1508622
+ETag = "-2122994235"
+Last-Modified = Thu, 01 Jan 1970 00:00:00 GMT
+X-XSS-Protection = 1
+X-Content-Type-Options = nosniff
+Content-Security-Policy = default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';
+Strict-Transport-Security = max-age=31536000; includeSubDomains
+Pragma = no-cache
+Cache-Control = no-cache, no-store, max-age=0
+Expires = -1
+Vary = Accept-Encoding
+Content-Type = application/hal+json;charset=utf-8
+Content-Length = 3730
+Date = Fri, 30 Aug 2024 01:09:21 GMT
+Connection = keep-alive
+v-c-correlation-id = fed8aab1-07a7-48d5-89e2-bd00c528a4c1
+[2024-08-30T01:09:21] [INFO] [TransactionDetailsApi] : CALL TO METHOD getTransaction ENDED
+[2024-08-30T01:09:21] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T01:09:21] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T01:09:21] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T01:09:21] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T01:09:21] [INFO] [ReversalApi] : CALL TO METHOD authReversal STARTED
+[2024-08-30T01:09:21] [DEBUG] [ReversalApi] : Resource : POST /pts/v2/payments/7247201066116252803983/reversals
+[2024-08-30T01:09:21] [DEBUG] [ReversalApi] : Body Parameter :
+{"clientReferenceInformation":{"code":"471007","applicationVersion":"1.0","applicationName":"REST API","partner":{"developerId":"S2TBCVPH"}},"reversalInformation":{"amountDetails":{"totalAmount":"100","currency":"USD","taxAmount":"0","authorizedAmount":"100"}}}
+[2024-08-30T01:09:21] [DEBUG] [ReversalApi] : Return Type : \CyberSourceApi\Model\PtsV2PaymentsReversalsPost201Response
+[2024-08-30T01:09:21] [INFO] [ApiClient] : CALLING API "/pts/v2/payments/7247201066116252803983/reversals" STARTED
+[2024-08-30T01:09:21] [DEBUG] [ApiClient] : Request Headers :
+Accept:  application/hal+json;charset=utf-8
+Content-Type:  application/json
+v-c-merchant-id: tdb_gc_corp
+Signature: keyid="XXXXX", algorithm="HmacSHA256", headers="host date request-target digest v-c-merchant-id", signature="2TRdD9AE+D7q7PX3XHZRpqjQbB5SgOkZZRtr1ylsOuk="
+Host: api.cybersource.com
+Date: Fri, 30 Aug 2024 1:09:21 GMT
+v-c-client-id: 
+Digest:  SHA-256=qccGklSFvPFoQynx1ISERssXtXbRna6VXiCQsVBKH3Q=
+[2024-08-30T01:09:21] [DEBUG] [ApiClient] : HTTP Request Body:
+{"clientReferenceInformation":{"code":"471007","applicationVersion":"1.0","applicationName":"REST API","partner":{"developerId":"S2TBCVPH"}},"reversalInformation":{"amountDetails":{"totalAmount":"100","currency":"USD","taxAmount":"0","authorizedAmount":"100"}}}
+[2024-08-30T01:09:21] [DEBUG] [ApiClient] : HTTP Response Body:
+{"id":"7249801619096999403989","submitTimeUtc":"2024-08-30T01:09:22Z","status":"INVALID_REQUEST","reason":"TRANSACTION_ALREADY_REVERSED_OR_SETTLED","message":"Decline - The transaction has already been settled or reversed."}
+[2024-08-30T01:09:21] [ERROR] [ApiClient] : ApiException : [400] Error connecting to the API (https://api.cybersource.com/pts/v2/payments/7247201066116252803983/reversals)
+[2024-08-30T01:09:21] [ERROR] [ReversalApi] : ApiException : CyberSourceApi\ApiException: [400] Error connecting to the API (https://api.cybersource.com/pts/v2/payments/7247201066116252803983/reversals) in /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/vendor/cybersource/rest-client-php/lib/ApiClient.php:461
+Stack trace:
+#0 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/vendor/cybersource/rest-client-php/lib/Api/ReversalApi.php(197): CyberSourceApi\ApiClient->callApi('/pts/v2/payment...', 'POST', Array, '{"clientReferen...', Array, '\\CyberSourceApi...', '/pts/v2/payment...')
+#1 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/vendor/cybersource/rest-client-php/lib/Api/ReversalApi.php(110): CyberSourceApi\Api\ReversalApi->authReversalWithHttpInfo('724720106611625...', Object(CyberSourceApi\Model\AuthReversalRequest))
+#2 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Samples/Payments/Reversal/ProcessAuthorizationReversal.php(44): CyberSourceApi\Api\ReversalApi->authReversal('724720106611625...', Object(CyberSourceApi\Model\AuthReversalRequest))
+#3 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/AuthReversal48hDelay.class.php(154): ProcessAuthorizationReversal(Array)
+#4 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/AuthReversal48hDelay.class.php(75): AuthReversal48hDelay::reverse_transaction(Object(stdClass))
+#5 /home/webdevtexasdebra/public_html/wp-includes/class-wp-hook.php(324): AuthReversal48hDelay::trigger_cron()
+#6 /home/webdevtexasdebra/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 /home/webdevtexasdebra/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/webdevtexasdebra/public_html/wp-cron.php(191): do_action_ref_array('mycronjobtime_e...', Array)
+#9 {main}
+[2024-08-30T19:13:22] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T19:13:22] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T19:13:22] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T19:13:22] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T19:13:22] [INFO] [TransactionDetailsApi] : CALL TO METHOD getTransaction STARTED
+[2024-08-30T19:13:22] [DEBUG] [TransactionDetailsApi] : Resource : GET /tss/v2/transactions/7247849787076940604989
+[2024-08-30T19:13:22] [DEBUG] [TransactionDetailsApi] : Body Parameter :
+
+[2024-08-30T19:13:22] [DEBUG] [TransactionDetailsApi] : Return Type : \CyberSourceApi\Model\TssV2TransactionsGet200Response
+[2024-08-30T19:13:22] [INFO] [ApiClient] : CALLING API "/tss/v2/transactions/7247849787076940604989" STARTED
+[2024-08-30T19:13:22] [DEBUG] [ApiClient] : Request Headers :
+Accept:  application/hal+json;charset=utf-8
+Content-Type:  application/json
+v-c-merchant-id: tdb_gc_corp
+Signature: keyid="XXXXX", algorithm="HmacSHA256", headers="host date request-target v-c-merchant-id", signature="NhKhiq4WbK+2fgTNQHzEfp9E6LT+bJinM2LtWXDor9w="
+Host: api.cybersource.com
+Date: Fri, 30 Aug 2024 19:13:22 GMT
+v-c-client-id: 
+[2024-08-30T19:13:22] [DEBUG] [ApiClient] : HTTP Request Body:
+
+[2024-08-30T19:13:22] [DEBUG] [ApiClient] : HTTP Response Body:
+{"id":"7247849787076940604989","rootId":"7247849787076940604989","reconciliationId":"817342931","submitTimeUTC":"2024-08-27T18:56:18Z","merchantId":"tdb_gc_corp","applicationInformation":{"reasonCode":100,"applications":[{"name":"ics_auth","reasonCode":"100","rCode":"1","rFlag":"SOK","reconciliationId":"817342931","rMessage":"Request was processed successfully.","returnCode":1010000}]},"buyerInformation":{"merchantCustomerId":"wc-guest-471092"},"clientReferenceInformation":{"code":"471092","applicationName":"REST API","applicationVersion":"1.0","partner":{"solutionId":"E39VEQD3"}},"consumerAuthenticationInformation":{"eciRaw":"7","strongAuthentication":[]},"deviceInformation":{"ipAddress":"184.96.176.5"},"errorInformation":{"message":"Request was processed successfully."},"installmentInformation":[],"fraudMarkingInformation":[],"merchantInformation":{"merchantDescriptor":{"name":"tdb_gc_corp"}},"orderInformation":{"billTo":{"firstName":"xxxxx","lastName":"xxxxx","address1":"3429 Oakville Ct.","locality":"North Las Vegas","administrativeArea":"NV","postalCode":"89032","email":"xxxxx","country":"US","phoneNumber":"xxxxx"},"shipTo":{"firstName":"xxxxx","lastName":"xxxxx","address1":"3429 Oakville Ct.","locality":"North Las Vegas","administrativeArea":"NV","postalCode":"89032","country":"US"},"amountDetails":{"totalAmount":"100","currency":"USD","taxAmount":"0","authorizedAmount":"100"},"shippingDetails":[],"invoiceDetails":[],"lineItems":[{"productCode":"default","productName":"E-Gift Card - 100","productSku":"932","taxAmount":0,"quantity":1,"unitPrice":100,"fulfillmentType":"P "},{"productCode":"shipping_and_handling","productName":"No shipping","productSku":"free_shipping","taxAmount":0,"quantity":1,"unitPrice":0,"fulfillmentType":"P "}]},"paymentInformation":{"customer":[],"paymentInstrument":[],"instrumentIdentifier":[],"shippingAddress":[],"paymentType":{"name":"vital","type":"xxxxx","method":"VI"},"card":{"suffix":"8367","prefix":"426684xxxxx","expirationMonth":"xxxx","expirationYear":"xxxx","type":"xxxxx"},"invoice":[],"accountFeatures":[],"fluidData":[],"issuerInformation":{"country":"US"},"paymentAccountInformation":{"card":[],"features":[],"network":[]}},"paymentInsightsInformation":{"responseInsights":[],"ruleResults":[]},"payoutInformation":{"pushFunds":[],"pullFunds":[]},"payoutOptions":[],"processingInformation":{"paymentSolution":"Visa","commerceIndicator":"7","commerceIndicatorLabel":"internet","authorizationOptions":{"authType":"O","initiator":{"merchantInitiatedTransaction":[]},"cardVerificationIndicator":false},"bankTransferOptions":[],"japanPaymentOptions":[],"fundingOptions":{"firstRecurringPayment":false},"ecommerceIndicator":"7","reconciliationId":"817342931","captureOptions":[]},"processorInformation":{"processor":{"name":"vital"},"approvalCode":"08575B","responseCode":"00","avs":{"code":"Y","codeRaw":"Y"},"cardVerification":{"resultCode":"M"},"achVerification":{"resultCodeRaw":"00"},"electronicVerificationResults":[]},"pointOfSaleInformation":[],"riskInformation":{"score":[]},"recipientInformation":[],"senderInformation":{"paymentInformation":{"customer":[],"paymentType":{"name":"vital","type":"xxxxx","method":"VI"},"card":{"suffix":"8367","expirationMonth":"xxxx","expirationYear":"xxxx","type":"xxxxx"},"invoice":[],"accountFeatures":[],"fluidData":[],"issuerInformation":[],"paymentAccountInformation":[]}},"tokenInformation":[],"_links":{"self":{"href":"https:\/\/api.cybersource.com\/tss\/v2\/transactions\/7247849787076940604989","method":"GET"},"relatedTransactions":[{"href":"https:\/\/api.cybersource.com\/tss\/v2\/transactions\/7247871482006907904960","method":"GET"}]},"recurringPaymentInformation":[],"unscheduledPaymentInformation":[]}
+[2024-08-30T19:13:22] [DEBUG] [TransactionDetailsApi] : Response Headers :
+HTTP/1.1 200
+X-OPNET-Transaction-Trace = a2_1a0c2261-9176-4ea2-9bce-52b73f84adca-1753239-1889347
+ETag = "2026479531"
+Last-Modified = Thu, 01 Jan 1970 00:00:00 GMT
+X-XSS-Protection = 1
+X-Content-Type-Options = nosniff
+Content-Security-Policy = default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';
+Strict-Transport-Security = max-age=31536000; includeSubDomains
+Expires = -1
+Pragma = no-cache
+Cache-Control = no-cache, no-store, max-age=0
+Vary = Accept-Encoding
+Content-Type = application/hal+json;charset=utf-8
+Content-Length = 3737
+Date = Fri, 30 Aug 2024 19:13:22 GMT
+Connection = keep-alive
+v-c-correlation-id = d0825b21-e841-48d9-b8e8-6b0f8b5fe0bc
+[2024-08-30T19:13:22] [INFO] [TransactionDetailsApi] : CALL TO METHOD getTransaction ENDED
+[2024-08-30T19:13:22] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T19:13:22] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T19:13:22] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T19:13:22] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T19:13:22] [INFO] [ReversalApi] : CALL TO METHOD authReversal STARTED
+[2024-08-30T19:13:22] [DEBUG] [ReversalApi] : Resource : POST /pts/v2/payments/7247849787076940604989/reversals
+[2024-08-30T19:13:22] [DEBUG] [ReversalApi] : Body Parameter :
+{"clientReferenceInformation":{"code":"471092","applicationVersion":"1.0","applicationName":"REST API","partner":{"developerId":"S2TBCVPH"}},"reversalInformation":{"amountDetails":{"totalAmount":"100","currency":"USD","taxAmount":"0","authorizedAmount":"100"}}}
+[2024-08-30T19:13:22] [DEBUG] [ReversalApi] : Return Type : \CyberSourceApi\Model\PtsV2PaymentsReversalsPost201Response
+[2024-08-30T19:13:22] [INFO] [ApiClient] : CALLING API "/pts/v2/payments/7247849787076940604989/reversals" STARTED
+[2024-08-30T19:13:22] [DEBUG] [ApiClient] : Request Headers :
+Accept:  application/hal+json;charset=utf-8
+Content-Type:  application/json
+v-c-merchant-id: tdb_gc_corp
+Signature: keyid="XXXXX", algorithm="HmacSHA256", headers="host date request-target digest v-c-merchant-id", signature="tLRc90xIb6gL2BVW+PpB0wFpnkf5XDVg4/ld79xJGbU="
+Host: api.cybersource.com
+Date: Fri, 30 Aug 2024 19:13:22 GMT
+v-c-client-id: 
+Digest:  SHA-256=eISDEHPtRc+n9Bn7jU5LO2XwWHfMe2s1NtJJaam29eI=
+[2024-08-30T19:13:22] [DEBUG] [ApiClient] : HTTP Request Body:
+{"clientReferenceInformation":{"code":"471092","applicationVersion":"1.0","applicationName":"REST API","partner":{"developerId":"S2TBCVPH"}},"reversalInformation":{"amountDetails":{"totalAmount":"100","currency":"USD","taxAmount":"0","authorizedAmount":"100"}}}
+[2024-08-30T19:13:22] [DEBUG] [ApiClient] : HTTP Response Body:
+{"id":"7250452025076562803975","submitTimeUtc":"2024-08-30T19:13:22Z","status":"INVALID_REQUEST","reason":"TRANSACTION_ALREADY_REVERSED_OR_SETTLED","message":"Decline - The transaction has already been settled or reversed."}
+[2024-08-30T19:13:22] [ERROR] [ApiClient] : ApiException : [400] Error connecting to the API (https://api.cybersource.com/pts/v2/payments/7247849787076940604989/reversals)
+[2024-08-30T19:13:22] [ERROR] [ReversalApi] : ApiException : CyberSourceApi\ApiException: [400] Error connecting to the API (https://api.cybersource.com/pts/v2/payments/7247849787076940604989/reversals) in /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/vendor/cybersource/rest-client-php/lib/ApiClient.php:461
+Stack trace:
+#0 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/vendor/cybersource/rest-client-php/lib/Api/ReversalApi.php(197): CyberSourceApi\ApiClient->callApi('/pts/v2/payment...', 'POST', Array, '{"clientReferen...', Array, '\\CyberSourceApi...', '/pts/v2/payment...')
+#1 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/vendor/cybersource/rest-client-php/lib/Api/ReversalApi.php(110): CyberSourceApi\Api\ReversalApi->authReversalWithHttpInfo('724784978707694...', Object(CyberSourceApi\Model\AuthReversalRequest))
+#2 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Samples/Payments/Reversal/ProcessAuthorizationReversal.php(44): CyberSourceApi\Api\ReversalApi->authReversal('724784978707694...', Object(CyberSourceApi\Model\AuthReversalRequest))
+#3 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/AuthReversal48hDelay.class.php(154): ProcessAuthorizationReversal(Array)
+#4 /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/AuthReversal48hDelay.class.php(75): AuthReversal48hDelay::reverse_transaction(Object(stdClass))
+#5 /home/webdevtexasdebra/public_html/wp-includes/class-wp-hook.php(324): AuthReversal48hDelay::trigger_cron()
+#6 /home/webdevtexasdebra/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 /home/webdevtexasdebra/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/webdevtexasdebra/public_html/wp-cron.php(191): do_action_ref_array('mycronjobtime_e...', Array)
+#9 {main}
+[2024-08-30T19:41:22] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T19:41:22] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T19:41:22] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T19:41:22] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T19:41:22] [INFO] [TransactionDetailsApi] : CALL TO METHOD getTransaction STARTED
+[2024-08-30T19:41:22] [DEBUG] [TransactionDetailsApi] : Resource : GET /tss/v2/transactions/7247866942116995104980
+[2024-08-30T19:41:22] [DEBUG] [TransactionDetailsApi] : Body Parameter :
+
+[2024-08-30T19:41:22] [DEBUG] [TransactionDetailsApi] : Return Type : \CyberSourceApi\Model\TssV2TransactionsGet200Response
+[2024-08-30T19:41:22] [INFO] [ApiClient] : CALLING API "/tss/v2/transactions/7247866942116995104980" STARTED
+[2024-08-30T19:41:22] [DEBUG] [ApiClient] : Request Headers :
+Accept:  application/hal+json;charset=utf-8
+Content-Type:  application/json
+v-c-merchant-id: tdb_gc_corp
+Signature: keyid="XXXXX", algorithm="HmacSHA256", headers="host date request-target v-c-merchant-id", signature="Mv/4EEzoKZ4mGbOADNLx9VCLkU70ubW/rNlUg/QT3GM="
+Host: api.cybersource.com
+Date: Fri, 30 Aug 2024 19:41:22 GMT
+v-c-client-id: 
+[2024-08-30T19:41:22] [DEBUG] [ApiClient] : HTTP Request Body:
+
+[2024-08-30T19:41:23] [DEBUG] [ApiClient] : HTTP Response Body:
+{"id":"7247866942116995104980","rootId":"7247866942116995104980","reconciliationId":"817359213","submitTimeUTC":"2024-08-27T19:24:54Z","merchantId":"tdb_gc_corp","applicationInformation":{"reasonCode":100,"applications":[{"name":"ics_auth","reasonCode":"100","rCode":"1","rFlag":"SOK","reconciliationId":"817359213","rMessage":"Request was processed successfully.","returnCode":1010000}]},"buyerInformation":{"merchantCustomerId":"wc-guest-471095"},"clientReferenceInformation":{"code":"471095","applicationName":"REST API","applicationVersion":"1.0","partner":{"solutionId":"E39VEQD3"}},"consumerAuthenticationInformation":{"eciRaw":"7","strongAuthentication":[]},"deviceInformation":{"ipAddress":"51.81.200.142"},"errorInformation":{"message":"Request was processed successfully."},"installmentInformation":[],"fraudMarkingInformation":[],"merchantInformation":{"merchantDescriptor":{"name":"tdb_gc_corp"}},"orderInformation":{"billTo":{"firstName":"xxxxx","lastName":"xxxxx","address1":"207 N Himes Ave","locality":"Tampa","administrativeArea":"FL","postalCode":"33609","email":"xxxxx","country":"US","phoneNumber":"xxxxx"},"shipTo":{"firstName":"xxxxx","lastName":"xxxxx","address1":"207 N Himes Ave","locality":"Tampa","administrativeArea":"FL","postalCode":"33609","country":"US"},"amountDetails":{"totalAmount":"150","currency":"USD","taxAmount":"0","authorizedAmount":"150"},"shippingDetails":[],"invoiceDetails":[],"lineItems":[{"productCode":"default","productName":"E-Gift Card - 150","productSku":"932","taxAmount":0,"quantity":1,"unitPrice":150,"fulfillmentType":"P "},{"productCode":"shipping_and_handling","productName":"No shipping","productSku":"free_shipping","taxAmount":0,"quantity":1,"unitPrice":0,"fulfillmentType":"P "}]},"paymentInformation":{"customer":[],"paymentInstrument":[],"instrumentIdentifier":[],"shippingAddress":[],"paymentType":{"name":"vital","type":"xxxxx","method":"VI"},"card":{"suffix":"9305","prefix":"476447xxxxx","expirationMonth":"xxxx","expirationYear":"xxxx","type":"xxxxx"},"invoice":[],"accountFeatures":[],"fluidData":[],"issuerInformation":{"country":"US"},"paymentAccountInformation":{"card":[],"features":[],"network":[]}},"paymentInsightsInformation":{"responseInsights":[],"ruleResults":[]},"payoutInformation":{"pushFunds":[],"pullFunds":[]},"payoutOptions":[],"processingInformation":{"paymentSolution":"Visa","commerceIndicator":"7","commerceIndicatorLabel":"internet","authorizationOptions":{"authType":"O","initiator":{"merchantInitiatedTransaction":[]},"cardVerificationIndicator":false},"bankTransferOptions":[],"japanPaymentOptions":[],"fundingOptions":{"firstRecurringPayment":false},"ecommerceIndicator":"7","reconciliationId":"817359213","captureOptions":[]},"processorInformation":{"processor":{"name":"vital"},"approvalCode":"042454","responseCode":"00","avs":{"code":"Y","codeRaw":"Y"},"cardVerification":{"resultCode":"M"},"achVerification":{"resultCodeRaw":"00"},"electronicVerificationResults":[]},"pointOfSaleInformation":[],"riskInformation":{"score":[]},"recipientInformation":[],"senderInformation":{"paymentInformation":{"customer":[],"paymentType":{"name":"vital","type":"xxxxx","method":"VI"},"card":{"suffix":"9305","expirationMonth":"xxxx","expirationYear":"xxxx","type":"xxxxx"},"invoice":[],"accountFeatures":[],"fluidData":[],"issuerInformation":[],"paymentAccountInformation":[]}},"tokenInformation":[],"_links":{"self":{"href":"https:\/\/api.cybersource.com\/tss\/v2\/transactions\/7247866942116995104980","method":"GET"}},"recurringPaymentInformation":[],"unscheduledPaymentInformation":[]}
+[2024-08-30T19:41:23] [DEBUG] [TransactionDetailsApi] : Response Headers :
+HTTP/1.1 200
+ETag = "-1782385889"
+Last-Modified = Thu, 01 Jan 1970 00:00:00 GMT
+X-XSS-Protection = 1
+X-Content-Type-Options = nosniff
+Content-Security-Policy = default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';
+Strict-Transport-Security = max-age=31536000; includeSubDomains
+Pragma = no-cache
+Expires = -1
+Cache-Control = no-cache, no-store, max-age=0
+Vary = Accept-Encoding
+Content-Type = application/hal+json;charset=utf-8
+Content-Length = 3594
+Date = Fri, 30 Aug 2024 19:41:22 GMT
+Connection = keep-alive
+v-c-correlation-id = 6bf4a8e7-3233-45f8-b015-595b9521721f
+X-OPNET-Transaction-Trace = 26dd89bd-64dd-492b-8fb8-1128d4c0130b
+[2024-08-30T19:41:23] [INFO] [TransactionDetailsApi] : CALL TO METHOD getTransaction ENDED
+[2024-08-30T19:41:23] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T19:41:23] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T19:41:23] [INFO] [MerchantConfiguration] : APPLICATION LOGGING START:
+
+[2024-08-30T19:41:23] [INFO] [MerchantConfiguration] : CONFIGURATION INFORMATION :
+authenticationType  = HTTP_SIGNATURE
+enableLogging  = 1
+debugLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/debugTest.log
+errorLogFile  = /home/webdevtexasdebra/public_html/wp-content/themes/texaswp/inc/cybersource-rest-samples-php/Resources/../Log/errorTest.log
+RunEnvironment  = api.cybersource.com
+[2024-08-30T19:41:23] [INFO] [ReversalApi] : CALL TO METHOD authReversal STARTED
+[2024-08-30T19:41:23] [DEBUG] [ReversalApi] : Resource : POST /pts/v2/payments/7247866942116995104980/reversals
+[2024-08-30T19:41:23] [DEBUG] [ReversalApi] : Body Parameter :
+{"clientReferenceInformation":{"code":"471095","applicationVersion":"1.0","applicationName":"REST API","partner":{"developerId":"S2TBCVPH"}},"reversalInformation":{"amountDetails":{"totalAmount":"150","currency":"USD","taxAmount":"0","authorizedAmount":"150"}}}
+[2024-08-30T19:41:23] [DEBUG] [ReversalApi] : Return Type : \CyberSourceApi\Model\PtsV2PaymentsReversalsPost201Response
+[2024-08-30T19:41:23] [INFO] [ApiClient] : CALLING API "/pts/v2/payments/7247866942116995104980/reversals" STARTED
+[2024-08-30T19:41:23] [DEBUG] [ApiClient] : Request Headers :
+Accept:  application/hal+json;charset=utf-8
+Content-Type:  application/json
+v-c-merchant-id: tdb_gc_corp
+Signature: keyid="XXXXX", algorithm="HmacSHA256", headers="host date request-target digest v-c-merchant-id", signature="S4rbElzIbopWuz1CLZCB+COF5bI6o4QNJe/D2mNDPQc="
+Host: api.cybersource.com
+Date: Fri, 30 Aug 2024 19:41:23 GMT
+v-c-client-id: 
+Digest:  SHA-256=kqcjwCsNst2HaN2G1Afouc6Tn+bMmt/CeeD1J4/uK1k=
+[2024-08-30T19:41:23] [DEBUG] [ApiClient] : HTTP Request Body:
+{"clientReferenceInformation":{"code":"471095","applicationVersion":"1.0","applicationName":"REST API","partner":{"developerId":"S2TBCVPH"}},"reversalInformation":{"amountDetails":{"totalAmount":"150","currency":"USD","taxAmount":"0","authorizedAmount":"150"}}}
+[2024-08-30T19:41:23] [DEBUG] [ApiClient] : HTTP Response Body:
+{"_links":{"self":{"method":"GET","href":"\/pts\/v2\/reversals\/7250468830956586003979"}},"authorizationInformation":{"approvalCode":"042454"},"clientReferenceInformation":{"code":"471095","partner":{"developerId":"S2TBCVPH"}},"id":"7250468830956586003979","orderInformation":{"amountDetails":{"currency":"USD"}},"processorInformation":{"responseCode":"00"},"reversalAmountDetails":{"reversedAmount":"150.00","currency":"USD"},"status":"REVERSED","submitTimeUtc":"2024-08-30T19:41:23Z"}
+[2024-08-30T19:41:23] [DEBUG] [ReversalApi] : Response Headers :
+HTTP/1.1 201 Created
+cache-control = no-cache, no-store, must-revalidate
+Pragma = no-cache
+expires = -1
+Strict-Transport-Security = max-age=31536000
+content-type = application/hal+json
+content-length = 482
+x-response-time = 636ms
+X-OPNET-Transaction-Trace = 3c6e1293-dab6-469f-9c9a-bd0ff83dd989
+Connection = keep-alive
+v-c-correlation-id = b9d77db4-7114-428c-bb06-9045fb283b5f
+[2024-08-30T19:41:23] [INFO] [ReversalApi] : CALL TO METHOD authReversal ENDED

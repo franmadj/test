@@ -1,0 +1,52 @@
+.reservations
+    background-position: top
+    background-size: cover
+    border-bottom: 1.6rem solid $lighterSecondary
+    min-height: 100vh
+    position: relative
+
+    &__inner
+        background-color: rgba(0, 0, 0, 0.9)
+        left: 50%
+        max-width: 48.8rem
+        padding: 6.2rem 2.4rem 3rem
+        position: absolute
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: calc(100% - 3.2rem)
+
+    &__heading
+        text-align: center
+
+    &__subtitle
+        color: $lightGray
+        display: block
+        font: 300 1.5rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        spaced(0.6rem)
+        text-transform: uppercase
+
+    &__title
+        color: $white
+        font-size: 3.2rem
+        letter-spacing: 2.5px
+        spaced(4.1rem)
+
+    &__form
+        spaced(2rem)
+
+    &__contact
+        display: none
+        color: $lightGray
+        font: 1.3rem/1.5em $fontOswald
+        letter-spacing: 1.5px
+        text-align: center
+        text-transform: uppercase
+
+    &__link
+        color: $white
+
+        &:focus,
+        &:hover
+            color: mix($white, $black, 90%)
+            text-decoration: none

@@ -1,0 +1,230 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 26, 2023, 6:12:21 PM
+    Author     : USER
+*/
+
+.datepicker-wai {
+
+    position: relative;
+}
+
+.datepicker-wai button.icon {
+    padding: 4px;
+    margin: 0;
+    border: transparent 2px solid;
+    border-radius: 5px;
+    text-align: left;
+    background-color: white;
+    position: relative;
+    left: -4px;
+    top: 3px;
+}
+
+.datepicker-wai button.icon:focus {
+    outline: none;
+    border-color: hsl(216, 80%, 55%);
+}
+
+.datepicker-wai span.arrow {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background: transparent;
+}
+
+.datepicker-wai input {
+    margin: 0;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #999;
+    text-align: center;
+
+}
+.datepicker-wai input::placeholder  {
+    color:white;
+}
+
+.datepicker-wai .datepickerDialog {
+    position: absolute;
+    clear: both;
+    display: none;
+    margin-top: 1em;
+    background-color: #050505f2;
+    border: solid 1px white;
+    padding: 10px;
+    min-width: 330px;
+}
+
+.datepicker-wai .header {
+    cursor: default;
+    background-color: #86090f;
+    padding: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+.datepicker-wai .header h2 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 1em;
+    color: white;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.datepicker-wai .header button {
+    border-style: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.datepicker-wai .datepickerDialog button::-moz-focus-inner {
+    border: 0;
+}
+
+.datepicker-wai .prevYear,
+.datepicker-wai .prevMonth,
+.datepicker-wai .nextMonth,
+.datepicker-wai .nextYear {
+    padding: 4px;
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.datepicker-wai .prevYear:focus,
+.datepicker-wai .prevMonth:focus,
+.datepicker-wai .nextMonth:focus,
+.datepicker-wai .nextYear:focus {
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 4px;
+    outline: 0;
+}
+
+.datepicker-wai .dialogButtonGroup {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+.datepicker-wai .dialogButton {
+    padding: 5px;
+    margin-left: 1em;
+    width: 5em;
+    background-color: hsl(216, 80%, 92%);
+    font-size: 0.85em;
+    color: black;
+    outline: none;
+    border: 1px solid hsl(216, 80%, 92%);
+    border-radius: 5px;
+}
+
+.datepicker-wai .dialogButton:focus {
+    padding: 4px;
+    border: 2px solid black;
+}
+
+.datepicker-wai .fa-calendar-alt {
+    color: hsl(216, 89%, 72%);
+}
+
+.datepicker-wai .monthYear {
+    display: inline-block;
+    width: 12em;
+    text-align: center;
+}
+
+.datepicker-wai table.dates {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+
+.datepicker-wai table.dates th,
+.datepicker-wai table.dates td {
+    text-align: center;
+    color:white;
+}
+
+.datepicker-wai .dateRow {
+    border: 1px solid black;
+}
+
+.datepicker-wai .dateCell {
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 40px;
+}
+
+.datepicker-wai .dateButton {
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #eee;
+
+    font-size: 15px;
+    background: #eee;
+}
+
+.datepicker-wai .dateButton:focus,
+.datepicker-wai .dateButton:hover {
+    padding: 0;
+    background-color: hsl(216, 80%, 92%);
+}
+
+.datepicker-wai .dateButton:focus {
+    border-width: 2px;
+    border-color: rgb(100, 100, 100);
+    outline: 0;
+}
+
+.datepicker-wai .dateButton[aria-selected] {
+    border-color: rgb(100, 100, 100);
+}
+
+.datepicker-wai .dateButton[tabindex="0"] {
+    background-color: hsl(216, 80%, 92%);
+}
+
+.datepicker-wai .disabled {
+    color: #afafaf;
+}
+
+.datepicker-wai .disabled:hover {
+    color: black;
+}
+
+.datepicker-wai .dateButton:disabled {
+    color: #777;
+    background-color: #fff;
+    border: none;
+    cursor: not-allowed;
+}
+
+.datepicker-wai .message {
+    padding-top: 0.25em;
+    padding-left: 1em;
+    height: 1.75em;
+    background: #86090f;
+    color: white;
+}
+

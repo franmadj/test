@@ -1,0 +1,356 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 13, 2021, 7:44:48 PM
+    Author     : USER
+
+*/
+.shop-categories {
+  text-align: center;
+}
+.shop-categories .u-actions {
+  margin-bottom: 1rem;
+}
+.shop-categories .cat-main-btn {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .shop-categories .cat-main-btn {
+    max-width: 256px;
+  }
+}
+.shop-categories .woocommerce-products-header h1 {
+  font-weight: bold;
+  font-size: 49px;
+  letter-spacing: 0px;
+  line-height: 70px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+.shop-categories .gift-black-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+@media (min-width: 600px) {
+  .shop-categories .gift-black-buttons {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+.shop-categories .gift-black-buttons a {
+  padding: 1.5rem;
+}
+@media (min-width: 600px) {
+  .shop-categories .gift-black-buttons a {
+    height: 57px;
+    margin-right: 3px;
+  }
+}
+.shop-categories .u-actions .-shop-cats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop-categories .u-actions .u-actions__title {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 21px;
+  margin-left: 0;
+}
+@media (min-width: 600px) {
+  .shop-categories .u-actions.extra-buttons {
+    top: 191px;
+  }
+}
+@media (min-width: 600px) {
+  .shop-categories .u-actions.main-buttons a {
+    height: 68px;
+  }
+}
+.shop-categories .u-product-list li h2 {
+  font-weight: bold;
+  font-size: 39px;
+  letter-spacing: 0px;
+  line-height: 70px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+.shop-categories .c-product__title {
+  color: #141415;
+  display: block;
+  font-family: Oswald;
+  font-size: 1.4rem;
+  line-height: 3.7rem;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+.shop-categories .back-to-products {
+  color: #000;
+  display: block;
+  font-family: Oswald;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  line-height: 1.9rem;
+  margin: 2rem auto;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+.shop-categories .back-to-products:before {
+  content: "\E80C";
+  display: inline-block;
+  font-family: fontello;
+  font-size: 2.4rem;
+  left: 0;
+  line-height: 1;
+  margin-right: 1.2rem;
+  transform: rotate(90deg);
+}
+.shop-categories .product-items {
+  margin-bottom: 25px;
+  max-width: 1230px;
+}
+@media (max-width: 600px) {
+  .shop-categories .product-items {
+    max-width: 322px;
+    margin: auto;
+  }
+}
+@media (min-width: 600px) {
+  .shop-categories .product-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}
+.shop-categories .product-items .product-item {
+  margin-top: 12px;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .shop-categories .product-items .product-item {
+    width: 27%;
+    margin: 15px;
+  }
+}
+.shop-categories .product-items .product-item > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+.shop-categories .product-items .product-item > div h3 {
+  margin-bottom: 0;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+.shop-categories .product-items .product-item > div span {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #85080E;
+}
+.shop-categories.shop-categories-merchandise .product-items, .shop-categories.shop-categories-a-la-carte .product-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.shop-categories.shop-categories-merchandise .product-items .product-item, .shop-categories.shop-categories-a-la-carte .product-items .product-item {
+  width: 48%;
+  margin: 6px 3px;
+}
+@media (min-width: 600px) {
+  .shop-categories.shop-categories-merchandise .product-items .product-item, .shop-categories.shop-categories-a-la-carte .product-items .product-item {
+    width: 27%;
+    margin: 15px;
+  }
+}
+.shop-categories.shop-categories-merchandise .product-items .product-item > div, .shop-categories.shop-categories-a-la-carte .product-items .product-item > div {
+  display: block;
+}
+.shop-categories.shop-categories-merchandise .product-items .product-item > div h3, .shop-categories.shop-categories-a-la-carte .product-items .product-item > div h3 {
+  margin-bottom: 6px;
+  font-size: 1.6rem;
+}
+.shop-categories.shop-categories-merchandise .product-items .product-item > div span, .shop-categories.shop-categories-a-la-carte .product-items .product-item > div span {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+.shop-categories.shop-categories-merchandise .product-items .product-item .c-product__button, .shop-categories.shop-categories-a-la-carte .product-items .product-item .c-product__button {
+  padding: 0.9rem 1.7rem;
+}
+
+.main {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+@media (min-width: 900px) {
+  .u-promo-back {
+    max-width: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .variations_form-cards .back-to-products-all {
+    display: none;
+  }
+}
+
+.variations_form-categories .c-current-card {
+  background-size: cover;
+  margin-bottom: 5px;
+  background-position: center;
+}
+.variations_form-categories .c-card-options .c-option {
+  height: 65px;
+}
+@media (min-width: 1000px) {
+  .variations_form-categories .back-to-products-all {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .variations_form-categories .u-desktop-preview {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+@media (min-width: 1000px) {
+  .variations_form-categories .u-desktop-preview {
+    overflow: hidden;
+    padding: 0;
+  }
+}
+.variations_form-categories .u-desktop-preview .c-current-card {
+  max-width: none;
+}
+@media (max-width: 900px) {
+  .variations_form-categories .c-option-style {
+    width: 98.3%;
+  }
+}
+
+.content-butcher {
+  padding: 0 !important;
+}
+@media (max-width: 900px) {
+  .content-butcher .u-product-detail {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+@media (min-width: 900px) {
+  .content-butcher .u-product-detail {
+    display: flex;
+  }
+}
+
+.back-to-products {
+  color: #000;
+  display: block;
+  font-family: Oswald;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  line-height: 1.9rem;
+  margin: 2rem auto;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.back-to-products:before {
+  content: "\E80C";
+  display: inline-block;
+  font-family: fontello;
+  font-size: 2.4rem;
+  left: 0;
+  line-height: 1;
+  margin-right: 1.2rem;
+  transform: rotate(90deg);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  margin-top: 25px;
+}
+
+.tab-link.active {
+  background: #86090f;
+}
+
+.u-product-content__title.tx-mobile-view {
+  margin-top: 26px;
+}
+
+.c-customizers.tx-mobile-view {
+  display: flex;
+}
+
+.butcher-current-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 221px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.butcher-gallery-images {
+  display: flex;
+  margin-bottom: 14px;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+.butcher-gallery-images img {
+  width: 89px;
+  height: 89px;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.merch-attributes {
+  display: flex;
+  width: 100%;
+}
+.merch-attributes .c-customizers__item {
+  flex: none;
+  width: 32.8% !important;
+}
+
+.back-to-products-all {
+  color: #000;
+  display: block;
+  font-family: Oswald;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  line-height: 1.9rem;
+  margin: 2rem auto;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.back-to-products-all:before {
+  content: "\E80C";
+  display: inline-block;
+  font-family: fontello;
+  font-size: 2.4rem;
+  left: 0;
+  line-height: 1;
+  margin-right: 1.2rem;
+  transform: rotate(90deg);
+}

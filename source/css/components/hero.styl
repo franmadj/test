@@ -1,0 +1,77 @@
+.hero
+    background-attachment: cover
+    background-position: center 0
+    background-size: cover
+    border-bottom: 1.6rem solid $lighterSecondary
+    height: 60rem
+    max-height: 100%
+    padding: 0 1.8rem 0
+    position: relative
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &:before
+        background: rgba(0, 0, 0, 0.25)
+        content: ''
+        cover()
+
+    &:after
+        border-color: transparent transparent $lighterSecondary transparent
+        border-style: solid
+        border-width: 0 54px 43px 54px
+        bottom: -0.1rem
+        content: ''
+        height: 0
+        left: 50%
+        position: absolute
+        transform: translateX(-50%)
+        width: 0
+        z-index: 3
+
+    &__inner
+        z-index: 5
+
+    &__logo
+        centeredBlock()
+        display: block
+        max-width: 28.4rem
+        position: relative
+        spaced(3.7rem)
+        width: 100%
+        margin-top: -4rem
+
+    &__arrow
+        bottom: 0
+        left: 50%
+        position: absolute
+        transform: translateX(-50%)
+        z-index: 4
+
+        &:focus,
+        &:hover
+            text-decoration: none
+
+        &:after
+            font-size: 2rem
+            icon($iconArrowBig)
+
+@media $desktop1
+    .hero
+        background-attachment: fixed
+        height: calc(100vh - 3.2rem)
+        max-height: none
+        top: 0
+        spaced(0)
+
+        &__inner
+            left: 50%
+            position: absolute
+            top: 50%
+            transform: translate(-50%, -50%)
+
+        &__logo
+            margin: 0 0 9.5rem
+            max-width: none
+            width: 59.7rem

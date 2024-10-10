@@ -1,0 +1,110 @@
+.leasing
+	&-content
+		color: #fff
+		margin: 180px auto 0 5%
+		max-width: 65rem
+		padding-bottom: 8.3rem
+	&-hero
+		background-size: cover
+		margin-bottom: 1.5rem
+		height: auto !important
+	&-hero:after,
+	&-hero:before
+		display: none
+	&-overlay
+		background: rgba(0,0,0,0.9)
+		padding: 3.2rem
+		max-width: 65rem
+		h3
+			color: $lightGray
+			font-family: $fontOswald
+			font-size: 2rem
+			font-weight: 300
+			letter-spacing: 0.1rem
+			line-height: 3rem
+			margin: 0
+			text-transform: uppercase
+		h1
+			color: $white
+			font-size: 3rem
+			line-height: 1.1
+			letter-spacing: 0.2rem
+			margin: 2rem 0 4.2rem 0
+			text-align: center
+			text-transform: uppercase
+		h4
+			color: $lightGray
+			font-family: $fontOswald
+			font-size: 1.3rem
+			letter-spacing: 0.1rem
+			line-height: 2rem
+			margin: 0 0 2.1rem 0
+		ul
+			padding: 0
+	&-form-embed:before,
+	&-form-embed:after
+		clear: both
+		content: " "
+		display: block
+	&-cols
+		display: inline-block
+		max-width: 26rem
+		vertical-align: top
+	&-desc,
+	&-desc p
+		color: $lightGray
+		font-size: 1.8rem
+		line-height: 2.4rem
+	&-qualifications
+		margin-left: 3rem
+	&-qualifications-desc,
+	&-qualifications-desc p
+		color: $lightGray
+		font-size: 1.5rem
+		line-height: 1.7rem
+	&-qualifications ul,
+	&-qualifications li
+		paddint-top 0
+		margin-top: 0
+	&-qualifications li
+		line-height: 1.7rem
+		margin-left: 1.7rem
+		padding-bottom: 1rem
+	&-form-embed
+		background: #000
+		margin: 2rem auto 0 auto
+		min-height: 23.8rem
+		padding: 1.5rem
+		width: 100%
+	&-submit
+		background: #6e181e url($imgPath + '/bg-submit-red.png') bottom center repeat-x
+		cursor: pointer
+		display: block
+		margin: 3rem auto 2.5rem auto
+		max-width: 36.8rem
+		width: 100%
+
+@media screen and (-webkit-min-device-pixel-ratio: 2)
+	.leasing-submit
+		background: #6e181e url($imgPath + '/bg-submit-red@2x.png') bottom center repeat-x
+		-webkit-background-size: 359.9rem 1.1rem
+
+@media screen and (max-width: 769px)
+	.leasing
+		&-hero
+			padding-top: 8.3rem
+		&-content
+			margin: 0 auto
+		&-overlay
+			margin: 0 auto
+
+@media screen and (max-width: 730px)
+	.leasing
+		&-cols
+			display: block
+			max-width: 100%
+			width: 100%
+		&-qualifications
+			margin: 2rem 0 0 0
+		h1
+			line-height: 6rem

@@ -1,0 +1,38 @@
+.reserve-button
+    background-color: $primary
+    background-image: url(/assets/img/reserve-texture.png)
+    background-position: center bottom
+    background-repeat: no-repeat
+    background-size: contain
+    color: $white
+    display: none
+    font: 400 1.4rem/1.5em $fontOswald
+    letter-spacing: 1.5px
+    padding: 10px 32px 15px
+    position: absolute
+    right: 0
+    text-transform: uppercase
+    top: 53px
+    z-index: 5
+    trBase()
+
+    &:before
+        color: $white
+        font-size: 21px
+        font-weight: 400
+        icon($iconTexas)
+        margin-right: 14px
+        position: relative
+        top: 3px
+
+    &:hover
+        color: $white
+        text-decoration: none
+        background-color: #63151b
+
+        &:before
+            color: $white
+
+@media $desktop1
+    .reserve-button
+        display: block

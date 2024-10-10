@@ -1,0 +1,98 @@
+.news-interior
+    background-image: url($imgPath + 'bg-dual-pat.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+
+.back-link
+    display: none !important
+    color: $black
+    display: block
+    font: 1.3rem/1.5em $fontOswald
+    letter-spacing: 1.5px
+    max-width: 11rem
+    padding-left: 4.4rem
+    position: relative
+    spaced(2rem)
+    text-transform: uppercase
+
+    &:focus,
+    &:hover
+        text-decoration: none
+
+    &:before
+        display: block
+        font-size: 2.4rem
+        icon($iconArrow)
+        left: 1.1rem
+        position: absolute
+        top: 50%
+        transform: translateY(-50%) rotate(90deg)
+
+.news-article
+    padding-bottom: 11.7rem
+    position: relative
+
+    &__inner
+        box-sizing: content-box
+        marginCenter()
+        max-width: 57.9rem
+        padded(1.6rem)
+        position: relative
+
+    &__title
+        color: $black
+        font-family: $fontOswald
+        font-size: 3.2rem
+        letter-spacing: 3.2px
+        line-height: 1.5em
+        spaced(4.1rem)
+        text-transform: uppercase
+
+    &__date
+        spaced(3.2rem)
+
+    &__share-links
+        spaced(1.6rem)
+
+    &__body
+        font-size: 1.8rem
+        line-height: 1.5em
+
+        ul
+            font: 1.5rem/1.5em $fontOswald
+            letter-spacing: 1.5px
+            list-style: none
+            text-transform: uppercase
+
+        li
+            spaced(1rem)
+
+
+.news-category
+    padding-bottom: 3.2rem
+
+
+
+/*------------------------------------*\
+    # Desktop Small
+\*------------------------------------*/
+
+@media $desktop1
+    .back-link
+        display: block !important
+
+    .news-article
+        &__inner
+            box-sizing: border-box
+            max-width: 76rem
+            padding-left: 18rem
+
+        &__info
+            left: 0
+            position: absolute
+            top: 0
+
+
+    .news-category
+        padding-bottom: 6.4rem

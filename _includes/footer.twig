@@ -1,0 +1,110 @@
+<footer class="footer desktop-footer">
+    <div class="footer__inner">
+        <img src="/assets/img/logos/TDB-05.png" alt="Texas de Brazil logo" class="footer__logo">
+
+        <div class="footer__links">
+            <ul class="footer__list">
+                {% set links = [
+                    {
+                        label: 'Careers',
+                        url: 'careers'
+                    },
+                    {
+                        label: 'Leasing & Expansion',
+                        url: 'leasing-expansion'
+                    },
+                    {
+                        label: 'Contact Us',
+                        url: 'contact'
+                    },
+                    {
+                        label: 'FAQ',
+                        url: 'faq'
+                    },
+                    {
+                        label: 'News',
+                        url: 'news'
+                    }
+                ] %}
+
+                {% for link in links %}
+                    <li class="footer__list-item">
+                        <a href="{{ url(link.url) }}" class="footer__link animsition-link">{{ link.label }}</a>
+                    </li>
+                {% endfor %}
+                <li class="footer__list-item footer__list-item--translator">
+                    <div id="google_translate_element"></div>
+
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({
+                                pageLanguage: 'en',
+                                includedLanguages: 'ar,de,es,fr,it,ja,ko,nl,pt,ru,zh-CN,zh-TW',
+                                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                            }, 'google_translate_element');
+                        }
+                    </script>
+
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </li>
+            </ul>
+
+            <ul class="footer__list -social">
+                {% set socialLinks = [
+                    {
+                        label: 'Facebook',
+                        url: social.facebook
+                    },
+                    {
+                        label: 'Twitter',
+                        url: social.twitterHandle
+                    },
+                    {
+                        label: 'Instagram',
+                        url: social.instagram
+                    },
+                    {
+                        label: 'Pinterest',
+                        url: social.pinterest
+                    }
+                ] %}
+
+                {% for link in socialLinks %}
+                    <li class="footer__list-item">
+                        <a href="{{ url(link.url) }}" target="_blank" class="footer__link -{{ link.label|lower }}">{{ link.label }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="footer__fine-print">
+            <div class="footer__message">
+                {{ messages.accessibility }}
+            </div>
+
+            <ul class="footer__list -fine">
+                {% set fineLinks = [
+                    {
+                        label: '',
+                        url: '',
+                    },
+                    {
+                        label: 'Privacy Policy',
+                        url: url('privacy-policy')
+                    },
+                    {
+                        label: 'Terms of Use',
+                        url: url('terms-of-use')
+                    }
+                ] %}
+
+                {% for link in fineLinks %}
+                    <li class="footer__list-item">
+                        <a href="{{ link.url }}"{% if link.newTab|default %} target="_blank"{% endif %} class="footer__link animsition-link">{{ link.label }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</footer>
