@@ -1,4 +1,4 @@
-</main>
+</main> an update
 <?php get_template_part('_includes/checkout-first-modal'); ?>
 </div>
 <!--<a href="/reservations/" class="reserve-button" data-ref="reserveButton">Reserve</a>
